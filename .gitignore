@@ -2,3 +2,10 @@
 .idea/
 .vscode/
 *.log
+
+# 방어적 차단: 원본 벤더 워크북은 이 PUBLIC 저장소에 절대 커밋되면 안 됨
+*.xlsx
+*.xls
+*.xlsm
+data/*.xlsx
+data/*.xls

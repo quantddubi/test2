@@ -225,14 +225,17 @@ function renderTables() {
       const thead = el("thead"); const htr = el("tr");
       for (const col of COLS) {
         const isSorted = state.sort.col === col.key;
+        const doSort = () => {
+          if (state.sort.col === col.key) state.sort.dir *= -1;
+          else state.sort = { col: col.key, dir: col.key === "name" ? 1 : -1 };
+          renderTables();
+        };
         const th = el("th", {
-          class: col.cls || "", scope: "col",
+          class: col.cls || "", scope: "col", role: "columnheader button", tabindex: "0",
+          title: col.label + " 기준 정렬", "aria-label": col.label + " 기준 정렬",
           "aria-sort": isSorted ? (state.sort.dir === 1 ? "ascending" : "descending") : "none",
-          onclick: () => {
-            if (state.sort.col === col.key) state.sort.dir *= -1;
-            else state.sort = { col: col.key, dir: col.key === "name" ? 1 : -1 };
-            renderTables();
-          }
+          onclick: doSort,
+          onkeydown: (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); doSort(); } }
         }, [el("span", { text: col.label }), el("span", { class: "sarrow" })]);
         htr.append(th);
       }
@@ -259,8 +262,9 @@ function renderTables() {
             const txt = fmtChangeVal(s, cv);
             td.append(el("span", { class: "arrow", text: arrow(cv) }), document.createTextNode(" " + (txt || "")));
             // tint: 방향(상승 빨강/하락 파랑) + |변화|를 컬럼·단위그룹 내 최대로 정규화
+            // (변화 0인 셀은 착색하지 않음 — 중립을 색으로 오도하지 않기 위해)
             const m = tintMetric(s, h); const grp = s.unit === "level" ? norm[h].lv : norm[h].bp;
-            if (m != null && grp > 0) {
+            if (cv !== 0 && m != null && grp > 0) {
               const a = 0.10 + 0.34 * Math.min(1, m / grp);
               td.style.background = `rgba(var(--${cv > 0 ? "up" : "down"}-tint), ${a.toFixed(3)})`;
             }

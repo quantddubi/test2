@@ -197,7 +197,7 @@ section { margin-top: 30px; }
 .meter-row { display: flex; justify-content: space-between; font-size: 10px; color: var(--text-muted); margin-top: 3px; font-variant-numeric: tabular-nums; }
 
 /* ---------- derived groups ---------- */
-.dgroups { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.dgroups { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
 .dgroup { background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px 4px 4px; box-shadow: var(--shadow); }
 .dgroup h3 { font-size: 12.5px; font-weight: 700; margin: 8px 12px 6px; color: var(--text-secondary); }
 .drow { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; padding: 8px 12px; border-top: 1px solid var(--border); }
