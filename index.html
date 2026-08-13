@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>글로벌 금리·크레딧·환율 대시보드</title>
+  <meta name="description" content="한국·글로벌 금리, 크레딧, 환율, 환헤지, 변동성 지표의 최신 스냅샷과 기간 변화 대시보드. 결과값만 공개(원본 시계열 비공개)." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%88%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="wrap">
+      <div class="header-row">
+        <div class="brand">
+          <h1>글로벌 금리·크레딧·환율 대시보드</h1>
+          <span class="sub">한국·미국·일본·유로·호주 금리 · 크레딧 · 환율 · 환헤지 · 변동성</span>
+        </div>
+        <div class="asof-badges">
+          <span class="badge as-of">기준일 <strong id="asof">—</strong></span>
+          <span class="badge">지표 <strong id="scount">—</strong></span>
+          <span class="badge" id="genbadge">생성 <strong id="genat">—</strong></span>
+          <button class="icon-btn" id="themeBtn" title="라이트/다크 전환" aria-label="테마 전환">◐</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="chips" id="catChips" role="group" aria-label="카테고리 필터"></div>
+        <span class="grow"></span>
+        <label class="field">변화 기준
+          <select class="sel" id="horizonSel" aria-label="변화 기준 기간">
+            <option value="1D">1일</option>
+            <option value="1W">1주</option>
+            <option value="1M" selected>1개월</option>
+            <option value="3M">3개월</option>
+            <option value="6M">6개월</option>
+            <option value="YTD">연초대비</option>
+            <option value="1Y">1년</option>
+          </select>
+        </label>
+        <div class="search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="searchBox" type="search" placeholder="지표 검색 (예: UST10y, 회사채, VIX)" aria-label="지표 검색" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="priv" id="privNote"></div>
+
+    <section id="kpiSec" aria-labelledby="kpiTitle">
+      <div class="sec-head"><h2 id="kpiTitle">헤드라인</h2><span class="sec-note">주요 지표 스냅샷 · 변화는 선택한 기준 기간</span></div>
+      <div class="kpi-grid" id="kpiGrid"></div>
+    </section>
+
+    <section id="derivedSec" aria-labelledby="dTitle">
+      <div class="sec-head"><h2 id="dTitle">파생 분석</h2><span class="sec-note">국채 커브 · 크레딧 스프레드 · 실질금리 (bp 기준)</span></div>
+      <div class="dgroups" id="dgroups"></div>
+    </section>
+
+    <section id="tablesSec" aria-labelledby="tTitle">
+      <div class="sec-head">
+        <h2 id="tTitle">전체 지표</h2>
+        <span class="count" id="tcount"></span>
+      </div>
+      <div class="legend" aria-hidden="false">
+        <span class="item"><span class="arrow" style="color:var(--up)">▲</span> 상승</span>
+        <span class="item"><span class="arrow" style="color:var(--down)">▼</span> 하락</span>
+        <span class="item">금리 변화 = <b>bp</b>, 환율·지수 = 레벨(+%)</span>
+        <span class="item">52주 위치 = 최근 1년 범위 내 현재 수준</span>
+      </div>
+      <div id="tables"></div>
+      <div class="empty" id="emptyMsg" hidden>검색 결과가 없습니다.</div>
+    </section>
+
+    <footer>
+      <span class="priv-inline"><b style="color:var(--text-secondary)">비공개 원칙:</b> 이 페이지는 <b>결과값만</b> 표시합니다. 원본 일별 시계열은 프라이빗 저장소에만 보관됩니다.</span>
+      <span>데이터 기준일 <span id="footasof">—</span></span>
+      <span>자동 생성 대시보드 · 정적 페이지</span>
+    </footer>
+  </main>
+
+  <div class="tt" id="tooltip" role="status" aria-live="polite"></div>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
