@@ -28,6 +28,8 @@
   --t6: #3f6b1e;  /* green */
   --t7: #4a3aa7;  /* violet */
   --t8: #b03432;  /* red */
+  --t9: #0f6f7a;  /* teal-dark */
+  --t10: #7a4b12; /* brown */
 
   /* 난이도 */
   --d-intro: #2e6b2e;
@@ -62,6 +64,7 @@
     --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.35);
     --t1: #5b9ae8; --t2: #e07a45; --t3: #2fae83; --t4: #cfa23a;
     --t5: #d2749f; --t6: #7fae4e; --t7: #9085e9; --t8: #e06663;
+  --t9: #4fb3bf; --t10: #c49a63;
     --d-intro: #7fae5c; --d-mid: #d0a44a; --d-adv: #e07a72;
     --e-builds: #a08c68; --e-contradicts: #e06663; --e-related: #6f6754;
   }
@@ -82,6 +85,7 @@
   --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.35);
   --t1: #5b9ae8; --t2: #e07a45; --t3: #2fae83; --t4: #cfa23a;
   --t5: #d2749f; --t6: #7fae4e; --t7: #9085e9; --t8: #e06663;
+  --t9: #4fb3bf; --t10: #c49a63;
   --d-intro: #7fae5c; --d-mid: #d0a44a; --d-adv: #e07a72;
   --e-builds: #a08c68; --e-contradicts: #e06663; --e-related: #6f6754;
 }
