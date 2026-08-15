@@ -1,0 +1,47 @@
+name: Build library index
+
+# library/notes/ 가 변경되면 index.json + html/ 을 재생성해 커밋한다.
+# (봇 커밋은 notes/ 를 건드리지 않으므로 재트리거되지 않음)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'library/notes/**'
+      - 'scripts/build_library.py'
+      - '.github/workflows/build-library.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-library
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build index
+        run: |
+          pip install pyyaml markdown
+          python scripts/build_library.py
+
+      - name: Commit if changed
+        run: |
+          git add library/index.json library/html
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git config user.name  "library-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(library): rebuild index"
+          git push

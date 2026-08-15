@@ -1,55 +1,43 @@
-# test2 — 글로벌 금리·크레딧·환율 대시보드 (PUBLIC)
+# 퀀트 연구 서재 (Quant Paper Library)
 
-한국·미국·일본·유로·호주의 **금리 · 크레딧 · 환율 · 환헤지 · 변동성** 지표를
-한눈에 보는 정적 대시보드입니다. GitHub Pages 로 배포됩니다.
+퀀트 투자 · 시스템트레이딩 · 자산배분 논문을 **전문성이 없는 사람도 이해할 수 있게**
+풀어 정리한 개인 지식 라이브러리입니다. GitHub Pages로 배포되는 정적 사이트입니다.
 
-> **이 저장소는 '결과값'만 담습니다.** 각 지표의 최신값·기간 변화·52주 통계 등
-> 요약 결과(`data/summary.json`)만 포함하며, **데이터 밴더의 원본 일별 시계열은
-> 포함하지 않습니다.** 원본은 비공개 저장소
-> [`test1`](https://github.com/quantddubi/test1) 에만 보관됩니다.
+> **저작권 안내** — 논문 PDF 원본은 이 저장소에 없습니다(프라이빗 저장소/드라이브에만 보관).
+> 여기 공개되는 것은 요약·해석·비평(2차 창작)뿐입니다.
 
-## 구성
+## 화면
+
+- **📚 서가** — 주제별 책장. 카드마다 한 줄 요약·난이도(입문/중급/심화)·검증 상태. 입문부터 읽기 순서대로 정렬.
+- **🕸 지식 그래프** — 논문 간 관계 지도 (토대로 발전 / 확장 / 반박·충돌 / 관련). 노드 클릭으로 노트 열람.
+- **💡 연구 아이디어** — 모든 노트의 '여기서 출발할 수 있는 후속 연구' 모아보기.
+- 검색 · 주제/난이도 필터 · 라이트/다크 · 반응형 · 외부 의존성 0.
+
+## 구조
 
 ```
-test2/
-├── index.html            # 대시보드 페이지
-├── assets/
-│   ├── styles.css        # 스타일 (라이트/다크, 외부 리소스 없음)
-│   └── app.js            # 렌더링 로직 (vanilla JS)
-├── data/
-│   └── summary.json      # ← test1의 GitHub Actions가 자동 갱신 (결과값만)
-└── .nojekyll
+├── index.html, assets/          # 대시보드 (vanilla JS)
+├── library/
+│   ├── README.md                # 노트 작성 규격 (스키마)
+│   ├── notes/*.md               # 노트 원본 — Obsidian 호환 마크다운
+│   ├── index.json               # 생성물: 메타데이터 + 관계 그래프
+│   └── html/<id>.html           # 생성물: 본문 렌더링
+├── scripts/build_library.py     # notes → index 빌더
+└── .github/workflows/build-library.yml   # notes 변경 시 자동 재빌드
 ```
 
-## 기능
+## 새 논문 추가하기
 
-- **헤드라인 KPI 타일** — 주요 지표(USDKRW, 국고 10y, UST10y, 기준금리, VIX/VKOSPI 등) 스냅샷 + 변화 + 52주 위치
-- **파생 분석** — 국채 커브(2s10s·5s30s 등), 크레딧 스프레드(회사채−국고), 실질금리(명목−BEI)
-- **전체 지표 테이블** — 카테고리별, `1D·1W·1M·3M·6M·YTD·1Y` 변화 히트맵, 52주 위치 미터
-- 검색 · 카테고리 필터 · 정렬 · 기준기간 선택
-- 라이트/다크 테마, 반응형, 접근성(색상 단독 의존 없음: ▲/▼·부호 병기)
-- 변화 색상은 **한국 시장 관례(상승=빨강, 하락=파랑)**
+1. PDF를 구글 드라이브 `papers/` 폴더(또는 프라이빗 저장소 `test1/papers/`)에 넣는다.
+2. Claude Code 세션에서: **"papers에 새 논문 있어, 서재에 정리해줘"**
+3. Claude가 읽고 규격대로 노트를 작성해 커밋 → Action이 인덱스 재생성 → 대시보드 반영.
 
-## GitHub Pages 배포
-
-**Settings → Pages → Build and deployment**
-- Source: **Deploy from a branch**
-- Branch: **`main`** / **`/ (root)`** → Save
-
-잠시 후 `https://quantddubi.github.io/test2/` 에서 확인할 수 있습니다.
-(`.nojekyll` 이 있어 `assets/` 가 그대로 서빙됩니다.)
-
-## 데이터 갱신 방식
-
-`data/summary.json` 은 **직접 편집하지 않습니다.** 비공개 저장소 `test1` 의
-GitHub Actions 가 원본 엑셀에서 결과값을 산출해 이 파일만 커밋/푸시합니다.
-설정 방법은 test1 README 를 참고하세요.
+노트 규격과 Obsidian 연동 방법은 [`library/README.md`](library/README.md) 참고.
 
 ## 로컬 미리보기
 
 ```bash
-python3 -m http.server 8099
-# → http://127.0.0.1:8099/
+pip install pyyaml markdown
+python scripts/build_library.py     # notes → index.json + html/
+python3 -m http.server 8099         # → http://127.0.0.1:8099/
 ```
-
-(파일을 직접 열면 브라우저 보안정책으로 `summary.json` 로드가 막히므로 위처럼 서버로 여세요.)
