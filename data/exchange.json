@@ -3,75 +3,34 @@
  "source": {
   "repo": "quantddubi/test1",
   "visibility": "private",
-  "commit": "d9c8cd9"
+  "commit": "05137d2"
  },
  "threshold": {
   "min_vaults": 3,
   "min_total_notes": 12
  },
  "stats": {
-  "vault_count": 10,
-  "note_count": 18,
-  "edge_count": 90,
-  "cross_edge_count": 65
+  "vault_count": 6,
+  "note_count": 30,
+  "edge_count": 183,
+  "cross_edge_count": 115
  },
  "vaults": [
-  {
-   "id": "delegation-benchmarking",
-   "title": "Delegation & Benchmarking",
-   "title_ko": "위임운용·벤치마크",
-   "permission": "summary",
-   "note_count": 0,
-   "keywords": [
-    "기관투자자",
-    "대리인 문제",
-    "벤치마크",
-    "성과평가",
-    "위임운용",
-    "인덱스"
-   ],
-   "description_ko": "돈을 남에게 맡길 때 생기는 왜곡 — 대리인 문제, 벤치마크가 만드는 수요 왜곡과 인덱스 편입 보조금, 성과평가의 게임.",
-   "source": {
-    "repo": "quantddubi/test1",
-    "path": "vaults/delegation-benchmarking",
-    "pdf_store": "Google Drive + papers/"
-   },
-   "notes": []
-  },
-  {
-   "id": "etf-microstructure",
-   "title": "ETF & Market Microstructure",
-   "title_ko": "ETF·시장미시구조",
-   "permission": "summary",
-   "note_count": 0,
-   "keywords": [
-    "ETF",
-    "가격발견",
-    "변동성",
-    "시장미시구조",
-    "유동성",
-    "차익거래"
-   ],
-   "description_ko": "ETF라는 그릇이 시장의 유동성·변동성·정보 전달을 어떻게 바꾸는가 — 차익거래 메커니즘, 지정판매자, 일중 가격발견, 스프레드 측정.",
-   "source": {
-    "repo": "quantddubi/test1",
-    "path": "vaults/etf-microstructure",
-    "pdf_store": "Google Drive + papers/"
-   },
-   "notes": []
-  },
   {
    "id": "factor-anomalies",
    "title": "Factors & Anomalies",
    "title_ko": "팩터·이상현상 실증",
    "permission": "summary",
-   "note_count": 4,
+   "note_count": 7,
    "keywords": [
     "거래비용",
     "데이터마이닝",
+    "마켓타이밍",
+    "시스템트레이딩",
     "실증검증",
     "이상현상",
     "재현성",
+    "투자자심리",
     "팩터투자"
    ],
    "description_ko": "팩터 모형의 성립과 그 신뢰성 검증 — 재현성, 발표 후 알파 감쇠, 거래비용 차감 후 생존 여부.",
@@ -81,6 +40,55 @@
     "pdf_store": "Google Drive + papers/"
    },
    "notes": [
+    {
+     "id": "bowles-reed-ringgenberg-2024",
+     "vault": "factor-anomalies",
+     "title": "Anomaly Time",
+     "title_ko": "알파에는 유통기한이 있다 — 정보 공개일로 다시 잰 28개 이상현상",
+     "authors": [
+      "Boone Bowles",
+      "Adam V. Reed",
+      "Matthew C. Ringgenberg",
+      "Jacob R. Thornock"
+     ],
+     "year": 2024,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "팩터투자",
+      "실증검증",
+      "투자자심리"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Bowles et al., 2024, JF, Anomaly Time.pdf"
+     },
+     "one_liner": "학계 관행인 6월 리밸런싱은 평균 5~6개월 묵은 정보로 포트폴리오를 짜는 것인데, 실제 정보 공개일 다음 날 포트폴리오를 만들면 28개 이상현상의 초과수익이 첫 달에 연율 9.84%로 집중되고 이후 빠르게 소멸한다 — 이상현상의 상당 부분은 죽은 게 아니라 낡은 정보로 측정되고 있었을 뿐이다"
+    },
+    {
+     "id": "engelberg-mclean-pontiff-2018",
+     "vault": "factor-anomalies",
+     "title": "Anomalies and News",
+     "title_ko": "이상현상은 뉴스 뜨는 날 돈을 번다 — 위험·기대오류·데이터마이닝의 삼자대면",
+     "authors": [
+      "Joseph Engelberg",
+      "R. David McLean",
+      "Jeffrey Pontiff"
+     ],
+     "year": 2018,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "팩터투자",
+      "실증검증",
+      "투자자심리"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Engelberg, McLean and Pontiff, 2018, JF, Anomalies and News.pdf"
+     },
+     "one_liner": "97개 이상현상의 수익은 기업뉴스가 나온 날 50% 더 높고 실적발표일에는 약 6배로 뛰는데, 위험·데이터마이닝 설명을 차례로 기각하고 나면 남는 답은 '투자자의 편향된 기대가 뉴스로 교정되면서 알파가 실현된다'는 것이다"
+    },
     {
      "id": "fama-french-1993",
      "vault": "factor-anomalies",
@@ -168,59 +176,39 @@
       "pdf": "papers/(Equity) Novy-Marx and Velikov, 2016, RFS, A Taxonomy of Anomalies and Their Trading Costs.pdf"
      },
      "one_liner": "주요 이상현상들의 거래비용 차감 후 순수익을 실제로 계산하고, 비용을 줄이는 설계 기법과 각 전략이 감당할 수 있는 자금 규모(캐패시티)까지 정량화한 논문"
+    },
+    {
+     "id": "sullivan-timmermann-white-1999",
+     "vault": "factor-anomalies",
+     "title": "Data-Snooping, Technical Trading Rule Performance, and the Bootstrap",
+     "title_ko": "행운의 챔피언을 가려내는 법 — 7,846개 매매 규칙에 걸어본 리얼리티 체크",
+     "authors": [
+      "Ryan Sullivan",
+      "Allan Timmermann",
+      "Halbert White"
+     ],
+     "year": 1999,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "실증검증",
+      "시스템트레이딩",
+      "마켓타이밍"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Sullivan, Timmermann and White, 1999, JF, Data-Snooping, Technical Trading Rule Performance, and the Bootstrap.pdf"
+     },
+     "one_liner": "다우지수 100년치에 기술적 매매 규칙 7,846개를 전부 돌려 '최고 규칙'의 성과를 데이터스누핑 보정 p값으로 재검증했더니, 1986년까지는 최고 규칙(5일 이동평균, 연 17.2%)이 보정 후에도 유의했지만 1987–96년 표본외와 S&P500 선물에서는 단독 p값 0.04짜리 규칙조차 보정하면 p값이 0.9로 튀며 증거가 사라졌다"
     }
    ]
-  },
-  {
-   "id": "information-attention",
-   "title": "Information & Attention",
-   "title_ko": "정보·투자자 주의",
-   "permission": "summary",
-   "note_count": 0,
-   "keywords": [
-    "미디어 감성",
-    "수익률 예측성",
-    "정보확산",
-    "투자자 주의",
-    "행동재무"
-   ],
-   "description_ko": "정보와 주의(attention)가 가격에 스며드는 경로 — 미디어 감성, 경제적 연결고리를 따라 흐르는 정보, 기관투자자의 주의 배분.",
-   "source": {
-    "repo": "quantddubi/test1",
-    "path": "vaults/information-attention",
-    "pdf_store": "Google Drive + papers/"
-   },
-   "notes": []
-  },
-  {
-   "id": "institutional-frictions",
-   "title": "Institutional Frictions",
-   "title_ko": "기관투자자 제약",
-   "permission": "summary",
-   "note_count": 0,
-   "keywords": [
-    "규제",
-    "기관투자자",
-    "보험사",
-    "연기금",
-    "채권",
-    "화재매각",
-    "회계제도"
-   ],
-   "description_ko": "연기금·보험사의 자산배분을 왜곡하는 제도적 마찰 — 규제자본, 회계제도, 할인율 유인, 도달수익률(reaching for yield), 화재매각.",
-   "source": {
-    "repo": "quantddubi/test1",
-    "path": "vaults/institutional-frictions",
-    "pdf_store": "Google Drive + papers/"
-   },
-   "notes": []
   },
   {
    "id": "market-timing",
    "title": "Market Timing & Predictability",
    "title_ko": "마켓타이밍·수익률 예측",
    "permission": "summary",
-   "note_count": 2,
+   "note_count": 4,
    "keywords": [
     "마켓타이밍",
     "수익률 예측",
@@ -258,6 +246,51 @@
      "one_liner": "예측 회귀에 '계수 부호는 이론과 맞아야 하고, 예측된 위험프리미엄은 음수일 수 없다'는 두 가지 상식적 제약만 걸면 여러 변수가 과거 평균을 이기며, R²가 아주 작아도 투자자에게는 경제적으로 큰 의미가 있다"
     },
     {
+     "id": "ferreira-santa-clara-2011",
+     "vault": "market-timing",
+     "title": "Forecasting Stock Market Returns: The Sum of the Parts Is More than the Whole",
+     "title_ko": "부분의 합이 전체보다 크다 — 추정 없이 쪼개서 예측하라",
+     "authors": [
+      "Miguel A. Ferreira",
+      "Pedro Santa-Clara"
+     ],
+     "year": 2011,
+     "venue": "Journal of Financial Economics",
+     "keywords": [
+      "마켓타이밍",
+      "실증검증"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Market Timing) Ferreira and Santa-Clara, 2011, JFE, Forecasting Stock Market Returns.pdf"
+     },
+     "one_liner": "주식 수익률을 배당가격비율·이익성장·PER성장 세 조각으로 쪼개 각각 따로 예측하는 SOP 방법은 추정할 모수가 없어 추정오차가 사라지고, 예측 회귀가 대부분 음수를 내던 표본외 R²를 연간 13.43%까지 끌어올리며 샤프비율을 0.31 높인다"
+    },
+    {
+     "id": "goyal-welch-zafirov-2024",
+     "vault": "market-timing",
+     "title": "A Comprehensive 2022 Look at the Empirical Performance of Equity Premium Prediction",
+     "title_ko": "16년 뒤의 재검증 — 새 예측변수 29개도 대부분 무너졌다",
+     "authors": [
+      "Amit Goyal",
+      "Ivo Welch",
+      "Athanasse Zafirov"
+     ],
+     "year": 2024,
+     "venue": "Review of Financial Studies",
+     "keywords": [
+      "마켓타이밍",
+      "실증검증"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Goyal, Welch and Zafirov, 2024, RFS, A Comprehensive 2022 Look at the Empirical Performance of Equity Premium Predi.pdf"
+     },
+     "one_liner": "Goyal-Welch(2008) 이후 톱저널에 발표된 새 주식 위험프리미엄 예측변수 29개를 2021년 말까지 연장해 재검증했더니 3분의 1 이상이 인샘플에서조차 유의성을 잃었고, 46개 전체 중 '지켜볼 만한' 것은 11개, 매수후보유를 통계적으로 유의하게 이긴 투자전략은 184개 중 3개뿐이었다"
+    },
+    {
      "id": "welch-goyal-2008",
      "vault": "market-timing",
      "title": "A Comprehensive Look at The Empirical Performance of Equity Premium Prediction",
@@ -286,11 +319,13 @@
    "title": "ML Asset Pricing",
    "title_ko": "머신러닝 자산가격",
    "permission": "summary",
-   "note_count": 2,
+   "note_count": 5,
    "keywords": [
     "고차원 예측",
+    "마켓타이밍",
     "머신러닝",
     "실증검증",
+    "자산배분",
     "정칙화",
     "팩터투자"
    ],
@@ -301,6 +336,30 @@
     "pdf_store": "Google Drive + papers/"
    },
    "notes": [
+    {
+     "id": "freyberger-neuhierl-weber-2020",
+     "vault": "ml-asset-pricing",
+     "title": "Dissecting Characteristics Nonparametrically",
+     "title_ko": "62개 특성 동물원에서 진짜는 13개 — 비모수 LASSO로 해부한 수익률 예측",
+     "authors": [
+      "Joachim Freyberger",
+      "Andreas Neuhierl",
+      "Michael Weber"
+     ],
+     "year": 2020,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "머신러닝",
+      "팩터투자",
+      "실증검증"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Portfolio) Freyberger, Neuhierl and Weber, 2020, RFS, Dissecting Characteristics Nonparametrically.pdf"
+     },
+     "one_liner": "62개 기업특성을 적응형 그룹 LASSO에 넣어 서로 조건부로 검증했더니 13개만 독립 정보를 갖고, 비선형 모형의 표본외 샤프비율(2.75)은 선형 모형(1.06)의 2.5배였다"
+    },
     {
      "id": "gu-kelly-xiu-2020",
      "vault": "ml-asset-pricing",
@@ -323,6 +382,55 @@
       "pdf": "papers/(Equity) Gu, Kelly and Xiu, 2020, RFS, Empirical Asset Pricing via Machine Learning.pdf"
      },
      "one_liner": "900개가 넘는 예측변수와 3만 개 종목·60년 데이터에 머신러닝 기법들을 체계적으로 비교했더니, 트리와 신경망이 가장 좋았고 그 우위는 다른 방법이 놓치는 '변수 간 상호작용'에서 나왔다"
+    },
+    {
+     "id": "jensen-kelly-malamud-2026",
+     "vault": "ml-asset-pricing",
+     "title": "Machine Learning and the Implementable Efficient Frontier",
+     "title_ko": "실행할 수 있는 프론티어만이 진짜다 — 거래비용을 목적함수에 넣은 머신러닝 포트폴리오",
+     "authors": [
+      "Theis Ingerslev Jensen",
+      "Bryan Kelly",
+      "Semyon Malamud",
+      "Lasse Heje Pedersen"
+     ],
+     "year": 2026,
+     "venue": "Review of Financial Studies",
+     "keywords": [
+      "머신러닝",
+      "자산배분",
+      "실증검증"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Portfolio) Jensen et al, RFS, 2026, Machine Learning and the Implementable Efficient Frontier.pdf"
+     },
+     "one_liner": "거래비용을 무시한 ML 마코위츠 포트폴리오는 표본외 총샤프 2.06을 내고도 비용을 빼면 수익이 크게 음수가 되는 반면, 비용을 목적함수에 넣고 포트폴리오 가중치를 직접 학습하는 Portfolio-ML은 100억 달러 투자자 기준으로도 순샤프 1.33을 지킨다 — 전략 평가의 기준 자체를 '비용 차감 후 실행 가능한 효율적 프론티어'로 바꾸자는 제안"
+    },
+    {
+     "id": "kelly-malamud-zhou-2024",
+     "vault": "ml-asset-pricing",
+     "title": "The Virtue of Complexity in Return Prediction",
+     "title_ko": "복잡할수록 좋다 — 관측치 12개로 모수 1만 개짜리 모델을 돌려도 되는 이유",
+     "authors": [
+      "Bryan Kelly",
+      "Semyon Malamud",
+      "Kangying Zhou"
+     ],
+     "year": 2024,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "머신러닝",
+      "마켓타이밍",
+      "실증검증"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Portfolio) Kelly, Malamud and Zhou, JF, 2024, The Virtue of Complexity in Return Prediction.pdf"
+     },
+     "one_liner": "모수 개수가 관측치 수를 훨씬 넘는 '복잡한' 모델일수록 표본외 시장 타이밍 성과가 좋아진다는 것을 랜덤 행렬 이론으로 증명하고, Welch-Goyal의 15개 예측변수만으로 표본외 샤프비율 0.47(t=4.5)을 실증했다 — 표본외 R²가 음수여도 돈은 벌린다"
     },
     {
      "id": "kozak-nagel-santosh-2020",
@@ -354,7 +462,7 @@
    "title": "Momentum",
    "title_ko": "모멘텀",
    "permission": "summary",
-   "note_count": 5,
+   "note_count": 6,
    "keywords": [
     "리스크관리",
     "모멘텀",
@@ -439,6 +547,28 @@
      "one_liner": "모멘텀 전략은 드물지만 치명적으로 무너지는데, 그 붕괴가 '시장이 크게 빠진 뒤 변동성이 높은 상태에서 급반등할 때' 일어난다는 것을 보이고, 그 조건이 미리 예측 가능하다는 점을 이용해 샤프지수를 두 배로 올린 논문"
     },
     {
+     "id": "ehsani-linnainmaa-2022",
+     "vault": "momentum",
+     "title": "Factor Momentum and the Momentum Factor",
+     "title_ko": "모멘텀은 독립 팩터가 아니다 — 다른 팩터들을 타이밍하는 전략이다",
+     "authors": [
+      "Sina Ehsani",
+      "Juhani T. Linnainmaa"
+     ],
+     "year": 2022,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "모멘텀",
+      "팩터투자"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Ehsani and Linnainmaa, 2022, JF, Factor Momentum and the Momentum Factor.pdf"
+     },
+     "one_liner": "팩터들은 직전 1년 수익이 플러스면 월 51bp, 마이너스면 6bp를 버는 자기상관을 보이는데, 이 '팩터 모멘텀'(특히 고유값 상위 10개 주성분의 모멘텀)이 개별 주식 모멘텀의 모든 변종을 통계적으로 흡수한다 — 모멘텀은 고유 팩터가 아니라 다른 팩터들의 자기상관이 집계된 것"
+    },
+    {
      "id": "jegadeesh-titman-1993",
      "vault": "momentum",
      "title": "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency",
@@ -490,13 +620,14 @@
    "title": "Portfolio Construction",
    "title_ko": "포트폴리오 구축",
    "permission": "summary",
-   "note_count": 3,
+   "note_count": 5,
    "keywords": [
     "리스크패리티",
     "분산투자",
     "실증검증",
     "자산배분",
     "추정오차",
+    "팩터투자",
     "포트폴리오 최적화"
    ],
    "description_ko": "평균-분산 최적화의 이론과 추정오차라는 현실 — 1/N의 역설, 리스크 패리티, 자산배분의 실무.",
@@ -529,6 +660,29 @@
      "one_liner": "60/40 포트폴리오는 사실상 '주식 몰빵'이라는 문제를 지적하고, 채권처럼 위험이 낮은 자산에 레버리지를 걸어 자산별 위험 기여를 균등하게 맞추면 장기적으로 더 나은 위험조정수익을 얻을 수 있음을 이론(레버리지 회피)과 1926년부터의 데이터로 보인 논문."
     },
     {
+     "id": "brandt-santa-clara-valkanov-2009",
+     "vault": "portfolio-construction",
+     "title": "Parametric Portfolio Policies: Exploiting Characteristics in the Cross-Section of Equity Returns",
+     "title_ko": "예측을 버리고 비중을 쓴다 — 계수 3개로 푸는 수천 종목 최적화",
+     "authors": [
+      "Michael W. Brandt",
+      "Pedro Santa-Clara",
+      "Rossen Valkanov"
+     ],
+     "year": 2009,
+     "venue": "Review of Financial Studies",
+     "keywords": [
+      "자산배분",
+      "팩터투자"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Portfolio) Brandt, Santa-Clara and Valkanov, 2009, RFS, Parametric Portfolio Policies.pdf"
+     },
+     "one_liner": "종목별 비중을 규모·가치·모멘텀 특성의 선형함수로 두고 그 계수 3개만 효용 최대화로 추정하면 공분산 행렬 추정 없이 수천 종목 최적화가 풀리며, 시장 보유 대비 확실성등가 이득이 표본 내 연 11.1%, 표본 외에도 연 5.4%에 달한다"
+    },
+    {
      "id": "demiguel-garlappi-uppal-2009",
      "vault": "portfolio-construction",
      "title": "Optimal Versus Naive Diversification: How Inefficient is the 1/N Portfolio Strategy?",
@@ -550,6 +704,31 @@
       "pdf": "papers/(Equity) DeMiguel, Garlappi and Uppal, 2009, RFS, Optimal versus Naive Diversification.pdf"
      },
      "one_liner": "돈을 그냥 N등분하는 1/N 전략과, 마코위츠 최적화 및 그 개량판 14개를 7개 데이터셋에서 겨뤄봤더니, 단 하나도 1/N을 일관되게 이기지 못했다는 논문"
+    },
+    {
+     "id": "demiguel-martin-utrera-nogales-2020",
+     "vault": "portfolio-construction",
+     "title": "A Transaction-Cost Perspective on the Multitude of Firm Characteristics",
+     "title_ko": "거래비용이 오히려 팩터 수를 늘린다 — 특성 결합의 매매 상쇄 효과",
+     "authors": [
+      "Victor DeMiguel",
+      "Alberto Martín-Utrera",
+      "Francisco J. Nogales",
+      "Raman Uppal"
+     ],
+     "year": 2020,
+     "venue": "Review of Financial Studies",
+     "keywords": [
+      "팩터투자",
+      "자산배분",
+      "실증검증"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Portfolio) DeMiguel et al, 2020, RFS, A Transaction-Cost Perspective on the Multitude of Firm Characteristics.pdf"
+     },
+     "one_liner": "51개 기업특성을 한꺼번에 최적 결합하면 리밸런싱 매매가 서로 상쇄돼 회전율이 72% 줄어들고, 그 덕분에 거래비용을 고려하면 유의한 특성이 6개에서 오히려 15개로 늘어난다"
     },
     {
      "id": "markowitz-1952",
@@ -578,13 +757,14 @@
    "title": "Volatility Management",
    "title_ko": "변동성 관리",
    "permission": "summary",
-   "note_count": 2,
+   "note_count": 3,
    "keywords": [
     "거래비용",
     "리스크관리",
     "마켓타이밍",
     "변동성 관리",
     "변동성 스케일링",
+    "옵션/변동성",
     "자산배분",
     "팩터투자"
    ],
@@ -595,6 +775,31 @@
     "pdf_store": "Google Drive + papers/"
    },
    "notes": [
+    {
+     "id": "bollerslev-hood-huss-pedersen-2018",
+     "vault": "volatility-management",
+     "title": "Risk Everywhere: Modeling and Managing Volatility",
+     "title_ko": "위험은 어디서나 닮았다 — 좋은 변동성 모형 하나의 값은 연 48bp",
+     "authors": [
+      "Tim Bollerslev",
+      "Benjamin Hood",
+      "John Huss",
+      "Lasse Heje Pedersen"
+     ],
+     "year": 2018,
+     "venue": "Review of Financial Studies",
+     "keywords": [
+      "리스크관리",
+      "옵션/변동성",
+      "자산배분"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Bollerslev, Patton and Quaedvlieg, 2018, RFS, Risk Everywhere Modeling and Managing Volatility.pdf"
+     },
+     "one_liner": "상품·주가지수·채권·통화 58개 자산의 고빈도 실현변동성을 각자의 평균으로 나누면 분포와 자기상관이 놀랍도록 닮아 있어서, 모든 자산에 같은 계수를 강제한 패널 추정 지수가중 모형(HExp)이 표본외 예측에서 가장 강하고, 이 '좋은 위험모형'은 변동성 타게팅 투자자에게 정적 모형 대비 연 48bp의 효용 가치가 있다"
+    },
     {
      "id": "demiguel-martin-utrera-uppal-2024",
      "vault": "volatility-management",
@@ -768,6 +973,212 @@
    "origin": "wikilink"
   },
   {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "asness-frazzini-pedersen-2012",
+   "target_vault": "portfolio-construction",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "서론에서 리스크 패리티 투자자를 이 위험모형의 핵심 수요자로 명시 — 정규화 분포의 유사성은 리스크 패리티가 자산군 간 위험 분포까지 일치시킴을 함의"
+  },
+  {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "barroso-santa-clara-2015",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "변동성 스케일링 전략의 성과를 다룬 선행 문헌으로 본문 각주에서 명시 인용 — 이 논문은 그 전략들의 입력값인 변동성 예측 자체를 개선"
+  },
+  {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "campbell-thompson-2008",
+   "target_vault": "market-timing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "표본외 R² 정의를 차용하고, 수익 예측의 효용 이득 '연 50bp'와 위험모형의 48bp를 직접 비교"
+  },
+  {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "demiguel-garlappi-uppal-2009",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "demiguel-martin-utrera-uppal-2024",
+   "target_vault": "volatility-management",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "변동성 관리 전략에 거래비용을 반영하는 같은 문제의식 — 이 논문은 스프레드 비용과 점진적 거래로 비용 이후에도 이득이 남음을 보임"
+  },
+  {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 변동성 타이밍 문제의 다른 반쪽 — 저쪽은 변동성 타이밍의 알파를, 이쪽은 수익 예측과 분리한 '변동성 안정화 자체'의 효용을 측정 (본문 각주에서 명시 인용)"
+  },
+  {
+   "source": "bollerslev-hood-huss-pedersen-2018",
+   "source_vault": "volatility-management",
+   "target": "moskowitz-ooi-pedersen-2012",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "TSMOM은 사전적 변동성으로 포지션을 스케일링하는 대표 전략(Pedersen 공저) — 이 논문의 위험모형이 그런 전략의 실무 기반"
+  },
+  {
+   "source": "bowles-reed-ringgenberg-2024",
+   "source_vault": "factor-anomalies",
+   "target": "engelberg-mclean-pontiff-2018",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이상현상 수익이 뉴스일에 몰린다는 그쪽 결과와 구분되는지 직접 검증 — 정보 공개일로부터의 거리 효과는 뉴스일·비뉴스일 모두에서 유지"
+  },
+  {
+   "source": "bowles-reed-ringgenberg-2024",
+   "source_vault": "factor-anomalies",
+   "target": "fama-french-1993",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문이 해부하는 '6월 포트폴리오 형성' 관행(FF92 컨벤션)이 Fama-French 계열 방법론에서 굳어진 표준"
+  },
+  {
+   "source": "bowles-reed-ringgenberg-2024",
+   "source_vault": "factor-anomalies",
+   "target": "hou-xue-zhang-2020",
+   "target_vault": "factor-anomalies",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "'이상현상 다수가 재현되지 않는다'는 진영에 맞서, 6월 리밸런싱의 낡은 정보가 예측력을 과소평가해 유의하지 않아 보이게 만든다고 반박"
+  },
+  {
+   "source": "bowles-reed-ringgenberg-2024",
+   "source_vault": "factor-anomalies",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "그 논문의 97개 예측변수 목록에서 출발해 28개를 고르고, '이상현상이 사라졌다'는 해석에 '낡은 정보로 재기 때문'이라는 반론을 제기"
+  },
+  {
+   "source": "bowles-reed-ringgenberg-2024",
+   "source_vault": "factor-anomalies",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "정보 리밸런싱의 높은 회전율이 거래비용 차감 후에도 살아남는지가 실행 가능성의 관건 — 논문은 부록에서 순수익이 유지된다고 답한다"
+  },
+  {
+   "source": "bowles-reed-ringgenberg-2024",
+   "source_vault": "factor-anomalies",
+   "target": "sullivan-timmermann-white-1999",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "demiguel-garlappi-uppal-2009",
+   "target_vault": "portfolio-construction",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "추정오차 탓에 최적화가 1/N을 못 이긴다는 비판에 대해, 모수를 3개로 줄인 정책은 표본외에서도 동일가중을 크게 이긴다고 응답(논문이 직접 인용)"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "demiguel-martin-utrera-nogales-2020",
+   "target_vault": "portfolio-construction",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문의 파라메트릭 정책을 수백 개 특성과 거래비용의 결합 문제로 확장한 직계 후속 연구"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "fama-french-1993",
+   "target_vault": "factor-anomalies",
+   "type": "extends",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "선형 정책이 FF식 롱숏 팩터 포트폴리오 선택을 특수 케이스로 포함(식 7)하며, 특성 비례 가중으로 일반화해 CE를 표본 내 36%, 표본 외 24% 개선"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "gu-kelly-xiu-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "특성→포트폴리오의 두 경로 — 이쪽은 비중을 직접 모형화, 저쪽은 기대수익을 ML로 예측한 뒤 포트폴리오를 구성"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "jegadeesh-titman-1993",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "정책에 들어가는 세 특성 중 모멘텀(t−13~t−2 누적수익률)의 원천"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "markowitz-1952",
+   "target_vault": "portfolio-construction",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 기대효용 포트폴리오 선택 문제에서 출발하되, 수익률의 적률(평균·공분산)을 추정하는 단계를 통째로 우회하는 대안 구현"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "brandt-santa-clara-valkanov-2009",
+   "source_vault": "portfolio-construction",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
    "source": "campbell-thompson-2008",
    "source_vault": "market-timing",
    "target": "barroso-santa-clara-2015",
@@ -912,6 +1323,102 @@
    "note": "이론적으로 우월한 평균-분산 최적화가 실전(표본외)에서는 추정오차 때문에 1/N에 진다"
   },
   {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "asness-moskowitz-pedersen-2013",
+   "target_vault": "momentum",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "brandt-santa-clara-valkanov-2009",
+   "target_vault": "portfolio-construction",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "파라메트릭 포트폴리오 방법론을 그대로 가져와 라쏘 정규화와 거래비용으로 확장"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "demiguel-garlappi-uppal-2009",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "demiguel-martin-utrera-uppal-2024",
+   "target_vault": "volatility-management",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "같은 저자들이 '결합해야 비용에서 살아남는다'는 동일한 논리를 변동성 관리 팩터에 적용한 후속 연구"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "freyberger-neuhierl-weber-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "거래비용 없는 세계에서 적응형 라쏘로 특성을 선별한 병렬 연구 — 이 논문 스크린 단계의 직접 비교 대상"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "kozak-nagel-santosh-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "같은 대규모 특성 축소 문제 — 저쪽은 비용 없는 세계의 예측(적합도), 이쪽은 비용 있는 세계의 유의성(추론)에 집중"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "markowitz-1952",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "데이터마이닝·발표 후 감쇠 우려의 출처 — 이 논문의 표본외 분석은 그 우려에 대한 방어"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "demiguel-martin-utrera-nogales-2020",
+   "source_vault": "portfolio-construction",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "contradicts",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "일반화 알파를 출발점으로 삼되, '거래비용이 유의한 특성 수를 줄인다'는 개별 검정 결론이 결합 관점에서는 정반대로 뒤집힌다고 반박"
+  },
+  {
    "source": "demiguel-martin-utrera-uppal-2024",
    "source_vault": "volatility-management",
    "target": "barroso-santa-clara-2015",
@@ -979,6 +1486,152 @@
    "note": "거래비용을 전략 설계에 명시적으로 넣는 접근의 연장선. 매매 상계(trading diversification) 개념을 핵심 도구로 사용"
   },
   {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "asness-moskowitz-pedersen-2013",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "'모멘텀은 도처에 있다'는 편재성 증거를 이 논문은 '팩터 자기상관의 발현'으로 재해석"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "barroso-santa-clara-2015",
+   "target_vault": "momentum",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "daniel-moskowitz-2016",
+   "target_vault": "momentum",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "fama-french-1993",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "jegadeesh-titman-1993",
+   "target_vault": "momentum",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "UMD로 대표되는 개별 주식 모멘텀을 직접 겨냥해, 그것이 팩터 자기상관의 집계적 발현임을 보인다"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "kozak-nagel-santosh-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "builds-on",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "KNS의 47개 팩터 데이터와 KNS(2018) 감성투자자 모형을 실증·이론의 토대로 직접 사용"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "이상현상 수익이 이상현상 수익을 예측한다는 선행 발견을 원문이 명시 인용하며 그 연장선에 선다"
+  },
+  {
+   "source": "ehsani-linnainmaa-2022",
+   "source_vault": "momentum",
+   "target": "moskowitz-ooi-pedersen-2012",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "시계열 모멘텀 전략을 자산이 아닌 팩터 수익률에 적용한 형태 — Goyal-Jegadeesh 롱 편향 문제도 PC 팩터 평균수익을 0으로 맞춰 회피"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "bowles-reed-ringgenberg-2024",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이상현상 수익이 정보 공개 시점에 집중된다는 이 논문의 발견을 '시그널 관측 시점' 관점에서 밀고 나간 후속 연구"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "fama-french-1993",
+   "target_vault": "factor-anomalies",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "베타와 위험프리미엄이 시간불변인 정적 요인모형으로는 정보일에만 커지는 알파를 설명할 수 없다고 정면 반박"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "hou-xue-zhang-2020",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이상현상의 진위를 가리는 같은 문제의식 — 이쪽은 수익의 '시점 분포'로, 저쪽은 재현 실패로 접근"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "jegadeesh-titman-1993",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "모멘텀은 이 논문의 Market 유형 이상현상의 대표 사례로, 애널리스트 오차의 부호가 뒤집히는 예외 패턴을 보인다"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자들의 97개 이상현상 표본을 그대로 가져와, '언제 알파가 실현되는가'라는 새 질문을 던진 직계 후속작"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "engelberg-mclean-pontiff-2018",
+   "source_vault": "factor-anomalies",
+   "target": "sullivan-timmermann-white-1999",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문이 기각하려는 세 번째 용의자(데이터 스누핑)의 통계적 기초를 제공한 고전"
+  },
+  {
    "source": "fama-french-1993",
    "source_vault": "factor-anomalies",
    "target": "asness-frazzini-pedersen-2012",
@@ -1005,6 +1658,238 @@
    "type": "mentions",
    "cross": true,
    "origin": "wikilink"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "brandt-santa-clara-valkanov-2009",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "campbell-thompson-2008",
+   "target_vault": "market-timing",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "CT의 Gordon 모형 분해는 SOP의 특수 사례임을 보이고, 같은 표본 직접 비교에서 SOP가 우세(연간 13.43% vs 3.24%)"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "demiguel-garlappi-uppal-2009",
+   "target_vault": "portfolio-construction",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "추정오차를 없앤 무추정 규칙이 정교한 추정을 이긴다는 같은 논리 — 저쪽은 자산배분의 1/N, 이쪽은 수익률 예측의 SOP"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "goyal-welch-zafirov-2024",
+   "target_vault": "market-timing",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "예측 문헌 전체를 최신 표본으로 재검증하는 후속 — 이 논문의 표본외 성과가 2007년 이후에도 유지되는지에 대한 답"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ferreira-santa-clara-2011",
+   "source_vault": "market-timing",
+   "target": "welch-goyal-2008",
+   "target_vault": "market-timing",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "그쪽의 데이터와 표본외 검증 틀을 그대로 받아 '실시간 마켓타이밍은 불가능했다'는 결론을 뒤집는 직접 응답"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "brandt-santa-clara-valkanov-2009",
+   "target_vault": "portfolio-construction",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "특성을 포트폴리오 비중에 직접 넣는 선행 접근. 가법 구조 가정과 크기 상호작용 논의에서 원문이 직접 인용"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "daniel-moskowitz-2016",
+   "target_vault": "momentum",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "demiguel-martin-utrera-nogales-2020",
+   "target_vault": "portfolio-construction",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "같은 다차원 질문의 포트폴리오·거래비용 관점. 원문이 이들의 거래비용 모형(식 6)을 그대로 차용"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "gu-kelly-xiu-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 해 같은 저널의 쌍둥이 문제의식 — 저쪽은 신경망·트리로 예측력을, 이쪽은 그룹 LASSO로 '어떤 특성이 독립 정보인가'라는 선택 문제를 정면으로 다룬다"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "hou-xue-zhang-2020",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "kelly-malamud-zhou-2024",
+   "target_vault": "ml-asset-pricing",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문은 '13개면 충분하다'는 희소성을, 저쪽은 파라미터가 많을수록 좋다는 복잡성의 미덕을 주장 — 모형 철학이 정면 충돌"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "kozak-nagel-santosh-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "결론에서 던진 '선택된 특성을 SDF·팩터로 잇는' 다음 단계 질문을 베이지안 축소로 답하는 연구"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "발표 후 58% 감쇠 결과를 시변 예측력 분석의 동기로 명시 인용 — 실제로 특성 중요도의 시간변동을 확인"
+  },
+  {
+   "source": "freyberger-neuhierl-weber-2020",
+   "source_vault": "ml-asset-pricing",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "campbell-thompson-2008",
+   "target_vault": "market-timing",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "비판자의 도구를 채택한 검증 — CT의 음수 절단을 표준 OOS 지표(OOSCT)로, CT의 위험회피 투자자 CEV 분석을 경제적 평가로 그대로 가져와 쓴다"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "ferreira-santa-clara-2011",
+   "target_vault": "market-timing",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "GW 비관론에 맞선 표본외 예측 낙관론 진영 — 이 논문의 26편 목록에는 없지만 같은 논쟁의 반대편에 서 있다"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "gu-kelly-xiu-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "hou-xue-zhang-2020",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "같은 형식의 쌍둥이 — 저쪽은 횡단면 이상현상 452개, 이쪽은 시계열 예측변수 46개를 통일 절차로 재현·재검증"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "명시 인용 — 발표 후 감쇠가 '투자자 학습' 탓인지 '애초 허구' 탓인지를 시계열 예측에서는 구분할 통계가 없다고 미해결로 남긴다"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "sullivan-timmermann-white-1999",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "결론이 기대는 데이터 스누핑 문제의식의 원류 — 특히 생존 변수 tchi(기술적 지표)는 그 논문의 검증 대상과 직결된다"
+  },
+  {
+   "source": "goyal-welch-zafirov-2024",
+   "source_vault": "market-timing",
+   "target": "welch-goyal-2008",
+   "target_vault": "market-timing",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자(Goyal-Welch)의 직계 후속편 — 동일한 틀(과거 평균 벤치마크, 누적 SSE 그래프)로 2008년 이후 문헌을 재검증하고, 원논문 17개 변수도 재점검한다"
   },
   {
    "source": "gu-kelly-xiu-2020",
@@ -1139,6 +2024,171 @@
    "type": "mentions",
    "cross": true,
    "origin": "wikilink"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "brandt-santa-clara-valkanov-2009",
+   "target_vault": "portfolio-construction",
+   "type": "extends",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "특성의 함수로 포트폴리오 가중치를 직접 모수화하는 아이디어를 각주에서 명시적으로 계승하며, 거래비용이 있는 동적 문제와 비선형 ML로 확장"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "demiguel-garlappi-uppal-2009",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "demiguel-martin-utrera-nogales-2020",
+   "target_vault": "portfolio-construction",
+   "type": "builds-on",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "ML·팩터 전략의 거래비용 문제를 지적한 논문으로 직접 인용하며, 그 문제의식에서 출발해 비용 인지 최적화를 설계했다고 명시"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "gu-kelly-xiu-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "'ML로 수익률 예측 → 포트폴리오 구성'이라는 표준 2단계 접근을 직접 인용하며, 그 접근이 비용 차감 후 음수 수익을 낸다는 문제를 출발점으로 삼는다"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "kelly-malamud-zhou-2024",
+   "target_vault": "ml-asset-pricing",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "랜덤 푸리에 특성(RF) 방법론의 이론적 성질을 분석한 논문을 예측·가중치 학습의 방법론적 기반으로 사용"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "kozak-nagel-santosh-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "markowitz-1952",
+   "target_vault": "portfolio-construction",
+   "type": "extends",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "마찰 없는 교과서 효율적 프론티어를 거래비용·투자자 규모에 의존하는 '실행 가능한 프론티어'로 일반화"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "jensen-kelly-malamud-2026",
+   "source_vault": "ml-asset-pricing",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "이상현상별 비용 차감 순수익과 캐패시티를 측정한 문헌의 문제의식을 공유 — 저쪽은 개별 전략의 사후 진단, 이쪽은 비용을 사전에 최적화에 내장하는 해법"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "campbell-thompson-2008",
+   "target_vault": "market-timing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "고복잡도 모델이 CT의 비음수 제약을 스스로 학습한다(수동 부과 시 샤프 0.47→0.54). CT의 R²→샤프 환산은 이 논문 이론의 c=0 특수경우"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "goyal-welch-zafirov-2024",
+   "target_vault": "market-timing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "예측 비관론의 최신판. 이 논문은 그쪽의 데이터 관행(인플레이션 시점 규약)을 따르면서 정반대의 경제적 결론에 도달"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "gu-kelly-xiu-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자 Kelly의 실증 ML 성공이 '왜' 가능한지에 대한 이론적 정당화 — 본문이 명시적으로 'ML 예측 성공의 이론적 근거를 제공한다'고 밝힌다"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "jensen-kelly-malamud-2026",
+   "target_vault": "ml-asset-pricing",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Kelly·Malamud 자신들의 후속 연구 — 고차원 ML 포트폴리오를 시장 타이밍 너머 실제 포트폴리오 선택 문제로 확장"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "kozak-nagel-santosh-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "moskowitz-ooi-pedersen-2012",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "'12개월 훈련창 전략은 시계열 모멘텀의 재포장'이라는 의심을 직접 검증 — TSM 대비 유의한 알파로 기각"
+  },
+  {
+   "source": "kelly-malamud-zhou-2024",
+   "source_vault": "ml-asset-pricing",
+   "target": "welch-goyal-2008",
+   "target_vault": "market-timing",
+   "type": "contradicts",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "같은 15개 예측변수를 쓰면서 R² 비관론은 재확인하되(릿지리스 R² −9,764%), 타이밍 전략 샤프비율로 평가하면 예측이 크게 유익하다고 경제적 결론을 뒤집는다"
   },
   {
    "source": "kozak-nagel-santosh-2020",
@@ -1445,6 +2495,65 @@
    "note": "발표 후 수익 감소를 다룬 연구가 정작 거래비용을 반영하지 않았다는 점을 지적하며 그 공백을 메운다"
   },
   {
+   "source": "sullivan-timmermann-white-1999",
+   "source_vault": "factor-anomalies",
+   "target": "gu-kelly-xiu-2020",
+   "target_vault": "ml-asset-pricing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "수많은 모형을 탐색하는 ML 자산가격 연구가 반드시 마주치는 탐색 편향 문제의 원형과 처방"
+  },
+  {
+   "source": "sullivan-timmermann-white-1999",
+   "source_vault": "factor-anomalies",
+   "target": "hou-xue-zhang-2020",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문이 세운 다중검정 문제의식을 이상현상 문헌 전체의 대규모 재현 실패로 이어간 후속 흐름"
+  },
+  {
+   "source": "sullivan-timmermann-white-1999",
+   "source_vault": "factor-anomalies",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 데이터스누핑 문제의식 — 이쪽은 검정 시점에 통계적으로 보정하고, 저쪽은 발표 전후 수익 감쇠로 사후에 측정한다"
+  },
+  {
+   "source": "sullivan-timmermann-white-1999",
+   "source_vault": "factor-anomalies",
+   "target": "moskowitz-ooi-pedersen-2012",
+   "target_vault": "momentum",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "이동평균·추세 규칙은 시계열 모멘텀의 기술적 구현 — 이 논문의 표본외 소멸 결과와 대비해 읽을 장기 증거"
+  },
+  {
+   "source": "sullivan-timmermann-white-1999",
+   "source_vault": "factor-anomalies",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "sullivan-timmermann-white-1999",
+   "source_vault": "factor-anomalies",
+   "target": "welch-goyal-2008",
+   "target_vault": "market-timing",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "표본내 유의성이 표본외에서 무너진다는 같은 경고를 수익률 예측변수 쪽에서 보인 연구"
+  },
+  {
    "source": "welch-goyal-2008",
    "source_vault": "market-timing",
    "target": "barroso-santa-clara-2015",
@@ -1504,273 +2613,26 @@
  ],
  "affinity": [
   {
-   "a": "delegation-benchmarking",
-   "b": "etf-microstructure",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "factor-anomalies",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "information-attention",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "institutional-frictions",
-   "shared_keywords": [
-    "기관투자자"
-   ],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "market-timing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "ml-asset-pricing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "momentum",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "portfolio-construction",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "delegation-benchmarking",
-   "b": "volatility-management",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "factor-anomalies",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "information-attention",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "institutional-frictions",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "market-timing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "ml-asset-pricing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "momentum",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "portfolio-construction",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "etf-microstructure",
-   "b": "volatility-management",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "factor-anomalies",
-   "b": "information-attention",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "factor-anomalies",
-   "b": "institutional-frictions",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
    "a": "factor-anomalies",
    "b": "market-timing",
    "shared_keywords": [
+    "마켓타이밍",
     "실증검증"
    ],
    "edge_counts": {
     "builds-on": 0,
     "extends": 0,
     "contradicts": 0,
-    "related": 2,
-    "mentions": 1
+    "related": 6,
+    "mentions": 2
    },
-   "strength": 2.25
+   "strength": 6.5
   },
   {
    "a": "factor-anomalies",
    "b": "ml-asset-pricing",
    "shared_keywords": [
+    "마켓타이밍",
     "실증검증",
     "팩터투자"
    ],
@@ -1778,46 +2640,49 @@
     "builds-on": 0,
     "extends": 0,
     "contradicts": 3,
-    "related": 0,
-    "mentions": 3
+    "related": 3,
+    "mentions": 6
    },
-   "strength": 3.75
+   "strength": 7.5
   },
   {
    "a": "factor-anomalies",
    "b": "momentum",
    "shared_keywords": [
+    "시스템트레이딩",
     "팩터투자"
    ],
    "edge_counts": {
     "builds-on": 1,
     "extends": 0,
     "contradicts": 2,
-    "related": 2,
-    "mentions": 4
+    "related": 5,
+    "mentions": 5
    },
-   "strength": 6.0
+   "strength": 9.25
   },
   {
    "a": "factor-anomalies",
    "b": "portfolio-construction",
    "shared_keywords": [
-    "실증검증"
+    "실증검증",
+    "팩터투자"
    ],
    "edge_counts": {
     "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 3,
-    "mentions": 2
+    "extends": 1,
+    "contradicts": 1,
+    "related": 4,
+    "mentions": 4
    },
-   "strength": 3.5
+   "strength": 7.0
   },
   {
    "a": "factor-anomalies",
    "b": "volatility-management",
    "shared_keywords": [
     "거래비용",
+    "마켓타이밍",
     "팩터투자"
    ],
    "edge_counts": {
@@ -1830,162 +2695,21 @@
    "strength": 1.25
   },
   {
-   "a": "information-attention",
-   "b": "institutional-frictions",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "information-attention",
-   "b": "market-timing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "information-attention",
-   "b": "ml-asset-pricing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "information-attention",
-   "b": "momentum",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "information-attention",
-   "b": "portfolio-construction",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "information-attention",
-   "b": "volatility-management",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "institutional-frictions",
-   "b": "market-timing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "institutional-frictions",
-   "b": "ml-asset-pricing",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "institutional-frictions",
-   "b": "momentum",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "institutional-frictions",
-   "b": "portfolio-construction",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
-   "a": "institutional-frictions",
-   "b": "volatility-management",
-   "shared_keywords": [],
-   "edge_counts": {
-    "builds-on": 0,
-    "extends": 0,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 0
-   },
-   "strength": 0.0
-  },
-  {
    "a": "market-timing",
    "b": "ml-asset-pricing",
    "shared_keywords": [
-    "실증검증"
+    "마켓타이밍",
+    "실증검증",
+    "자산배분"
    ],
    "edge_counts": {
     "builds-on": 0,
     "extends": 1,
-    "contradicts": 0,
-    "related": 0,
-    "mentions": 2
+    "contradicts": 1,
+    "related": 2,
+    "mentions": 3
    },
-   "strength": 1.5
+   "strength": 4.75
   },
   {
    "a": "market-timing",
@@ -2011,10 +2735,10 @@
     "builds-on": 1,
     "extends": 0,
     "contradicts": 0,
-    "related": 0,
-    "mentions": 2
+    "related": 1,
+    "mentions": 3
    },
-   "strength": 1.5
+   "strength": 2.75
   },
   {
    "a": "market-timing",
@@ -2027,10 +2751,10 @@
     "builds-on": 0,
     "extends": 0,
     "contradicts": 1,
-    "related": 1,
-    "mentions": 1
+    "related": 2,
+    "mentions": 3
    },
-   "strength": 2.25
+   "strength": 3.75
   },
   {
    "a": "ml-asset-pricing",
@@ -2039,33 +2763,37 @@
     "팩터투자"
    ],
    "edge_counts": {
-    "builds-on": 0,
+    "builds-on": 1,
     "extends": 0,
     "contradicts": 0,
-    "related": 0,
-    "mentions": 1
+    "related": 1,
+    "mentions": 2
    },
-   "strength": 0.25
+   "strength": 2.5
   },
   {
    "a": "ml-asset-pricing",
    "b": "portfolio-construction",
    "shared_keywords": [
-    "실증검증"
+    "실증검증",
+    "자산배분",
+    "팩터투자"
    ],
    "edge_counts": {
-    "builds-on": 2,
-    "extends": 0,
+    "builds-on": 3,
+    "extends": 2,
     "contradicts": 0,
-    "related": 0,
-    "mentions": 1
+    "related": 4,
+    "mentions": 2
    },
-   "strength": 2.25
+   "strength": 9.5
   },
   {
    "a": "ml-asset-pricing",
    "b": "volatility-management",
    "shared_keywords": [
+    "마켓타이밍",
+    "자산배분",
     "팩터투자"
    ],
    "edge_counts": {
@@ -2073,22 +2801,24 @@
     "extends": 0,
     "contradicts": 0,
     "related": 0,
-    "mentions": 1
+    "mentions": 2
    },
-   "strength": 0.25
+   "strength": 0.5
   },
   {
    "a": "momentum",
    "b": "portfolio-construction",
-   "shared_keywords": [],
+   "shared_keywords": [
+    "팩터투자"
+   ],
    "edge_counts": {
     "builds-on": 1,
     "extends": 0,
     "contradicts": 0,
-    "related": 0,
-    "mentions": 7
+    "related": 1,
+    "mentions": 8
    },
-   "strength": 2.75
+   "strength": 4.0
   },
   {
    "a": "momentum",
@@ -2101,25 +2831,26 @@
     "builds-on": 0,
     "extends": 1,
     "contradicts": 0,
-    "related": 0,
+    "related": 2,
     "mentions": 3
    },
-   "strength": 1.75
+   "strength": 3.75
   },
   {
    "a": "portfolio-construction",
    "b": "volatility-management",
    "shared_keywords": [
-    "자산배분"
+    "자산배분",
+    "팩터투자"
    ],
    "edge_counts": {
     "builds-on": 3,
     "extends": 0,
     "contradicts": 0,
-    "related": 0,
-    "mentions": 0
+    "related": 2,
+    "mentions": 2
    },
-   "strength": 3.0
+   "strength": 5.5
   }
  ]
 }
