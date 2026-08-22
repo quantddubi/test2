@@ -3,19 +3,63 @@
  "source": {
   "repo": "quantddubi/test1",
   "visibility": "private",
-  "commit": "bf19706"
+  "commit": "d9c8cd9"
  },
  "threshold": {
   "min_vaults": 3,
   "min_total_notes": 12
  },
  "stats": {
-  "vault_count": 6,
+  "vault_count": 10,
   "note_count": 18,
   "edge_count": 90,
   "cross_edge_count": 65
  },
  "vaults": [
+  {
+   "id": "delegation-benchmarking",
+   "title": "Delegation & Benchmarking",
+   "title_ko": "위임운용·벤치마크",
+   "permission": "summary",
+   "note_count": 0,
+   "keywords": [
+    "기관투자자",
+    "대리인 문제",
+    "벤치마크",
+    "성과평가",
+    "위임운용",
+    "인덱스"
+   ],
+   "description_ko": "돈을 남에게 맡길 때 생기는 왜곡 — 대리인 문제, 벤치마크가 만드는 수요 왜곡과 인덱스 편입 보조금, 성과평가의 게임.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/delegation-benchmarking",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": []
+  },
+  {
+   "id": "etf-microstructure",
+   "title": "ETF & Market Microstructure",
+   "title_ko": "ETF·시장미시구조",
+   "permission": "summary",
+   "note_count": 0,
+   "keywords": [
+    "ETF",
+    "가격발견",
+    "변동성",
+    "시장미시구조",
+    "유동성",
+    "차익거래"
+   ],
+   "description_ko": "ETF라는 그릇이 시장의 유동성·변동성·정보 전달을 어떻게 바꾸는가 — 차익거래 메커니즘, 지정판매자, 일중 가격발견, 스프레드 측정.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/etf-microstructure",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": []
+  },
   {
    "id": "factor-anomalies",
    "title": "Factors & Anomalies",
@@ -126,6 +170,50 @@
      "one_liner": "주요 이상현상들의 거래비용 차감 후 순수익을 실제로 계산하고, 비용을 줄이는 설계 기법과 각 전략이 감당할 수 있는 자금 규모(캐패시티)까지 정량화한 논문"
     }
    ]
+  },
+  {
+   "id": "information-attention",
+   "title": "Information & Attention",
+   "title_ko": "정보·투자자 주의",
+   "permission": "summary",
+   "note_count": 0,
+   "keywords": [
+    "미디어 감성",
+    "수익률 예측성",
+    "정보확산",
+    "투자자 주의",
+    "행동재무"
+   ],
+   "description_ko": "정보와 주의(attention)가 가격에 스며드는 경로 — 미디어 감성, 경제적 연결고리를 따라 흐르는 정보, 기관투자자의 주의 배분.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/information-attention",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": []
+  },
+  {
+   "id": "institutional-frictions",
+   "title": "Institutional Frictions",
+   "title_ko": "기관투자자 제약",
+   "permission": "summary",
+   "note_count": 0,
+   "keywords": [
+    "규제",
+    "기관투자자",
+    "보험사",
+    "연기금",
+    "채권",
+    "화재매각",
+    "회계제도"
+   ],
+   "description_ko": "연기금·보험사의 자산배분을 왜곡하는 제도적 마찰 — 규제자본, 회계제도, 할인율 유인, 도달수익률(reaching for yield), 화재매각.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/institutional-frictions",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": []
   },
   {
    "id": "market-timing",
@@ -1416,6 +1504,255 @@
  ],
  "affinity": [
   {
+   "a": "delegation-benchmarking",
+   "b": "etf-microstructure",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "factor-anomalies",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "information-attention",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "institutional-frictions",
+   "shared_keywords": [
+    "기관투자자"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "market-timing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "momentum",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "portfolio-construction",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "delegation-benchmarking",
+   "b": "volatility-management",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "factor-anomalies",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "information-attention",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "institutional-frictions",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "market-timing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "momentum",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "portfolio-construction",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "volatility-management",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "factor-anomalies",
+   "b": "information-attention",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "factor-anomalies",
+   "b": "institutional-frictions",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
    "a": "factor-anomalies",
    "b": "market-timing",
    "shared_keywords": [
@@ -1491,6 +1828,149 @@
     "mentions": 1
    },
    "strength": 1.25
+  },
+  {
+   "a": "information-attention",
+   "b": "institutional-frictions",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "market-timing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "momentum",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "portfolio-construction",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "volatility-management",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "market-timing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "momentum",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "portfolio-construction",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "volatility-management",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
   },
   {
    "a": "market-timing",
