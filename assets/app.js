@@ -111,7 +111,7 @@ function makeSim(nodes, springs, drawFn) {
         let d2 = dx * dx + dy * dy;
         if (d2 < 1e-4) { dx = ((i * 7 + j) % 13 - 6) * 0.01 || 0.01; dy = ((i * 5 + j) % 11 - 5) * 0.01 || 0.01; d2 = dx * dx + dy * dy; }
         const d = Math.sqrt(d2);
-        const f = Math.min((90 * (p.r + q.r)) / d2, 6) * a;
+        const f = Math.min((170 * (p.r + q.r)) / d2, 9) * a;
         const fx = (dx / d) * f, fy = (dy / d) * f;
         if (!p.fixed) { p.vx += fx; p.vy += fy; }
         if (!q.fixed) { q.vx -= fx; q.vy -= fy; }
@@ -142,7 +142,8 @@ function makeSim(nodes, springs, drawFn) {
         const p = nodes[i], q = nodes[j];
         const dx = q.x - p.x, dy = q.y - p.y;
         const d = Math.sqrt(dx * dx + dy * dy) || 0.01;
-        const min = p.r + q.r + 14;
+        // 라벨이 노드 아래에 그려지므로 반지름 합보다 넉넉히 띄워야 글자가 겹치지 않는다
+        const min = p.r + q.r + (p.kind === "vault" || q.kind === "vault" ? 52 : 22);
         if (d < min) {
           const push = (min - d) / 2, ux = dx / d, uy = dy / d;
           if (!p.fixed) { p.x -= ux * push; p.y -= uy * push; }
@@ -220,15 +221,19 @@ function buildNetworkSim() {
   const byId = new Map(nodes.map((n) => [n.id, n]));
   const links = [];   // 그려지는 연결 (스프링 有)
   const gaps = [];    // 공백 — 물리력 없음, 점선만
+  // 장력은 절대값이 아니라 이 데이터셋 안에서의 상대값으로 매핑한다.
+  // 절대 스케일을 쓰면 vault가 쌓일수록 모든 쌍이 하한에 붙어 차이가 사라진다.
+  const maxS = Math.max(1, ...state.affinity.map((p) => p.strength));
   for (const p of state.affinity) {
     const a = byId.get(p.a), b = byId.get(p.b);
     if (!a || !b) continue;
     if (p.total > 0) {
+      const rel = p.strength / maxS;               // 0…1
       links.push({
         a, b, pair: p,
-        L: Math.max(110, Math.min(260, 260 - 34 * p.strength)),
-        k: 0.012 * (0.5 + 0.2 * p.strength),
-        width: Math.min(1.5 + 0.9 * p.strength, 7),
+        L: 300 - 150 * rel,                        // 가장 센 쌍 150, 가장 약한 쌍 300 근처
+        k: 0.010 * (0.4 + 1.1 * rel),
+        width: 1.3 + 5 * rel,
         conflict: p.edge_counts.contradicts > 0,
         develop: (p.edge_counts["builds-on"] + p.edge_counts.extends) >= (p.edge_counts.related + p.edge_counts.mentions),
       });
