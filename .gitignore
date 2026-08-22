@@ -9,3 +9,7 @@
 *.xlsm
 data/*.xlsx
 data/*.xls
+
+# python
+__pycache__/
+*.pyc

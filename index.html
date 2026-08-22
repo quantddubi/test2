@@ -1,82 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>퀀트 연구 서재</title>
-  <meta name="description" content="퀀트 투자·시스템트레이딩·자산배분 논문을 초보자도 이해할 수 있게 정리한 지식 라이브러리. 서가, 지식 그래프, 연구 아이디어 보드." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="./assets/styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연구 Vault 관계망</title>
+<meta name="description" content="주제별 연구 Vault 사이의 연결·보완·충돌·공백을 물리엔진으로 탐색하는 공개 대시보드. 노트 본문은 프라이빗 vault에만 있습니다.">
+<link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-  <header class="masthead">
-    <div class="wrap">
-      <div class="mast-row">
-        <h1>퀀트 연구 서재</h1>
-        <span class="sub">논문을 읽기 쉽게 풀어 정리한 개인 지식 라이브러리</span>
-        <span class="spacer"></span>
-        <span class="count-badge" id="countBadge">—</span>
-        <button class="icon-btn" id="themeBtn" title="라이트/다크 전환" aria-label="테마 전환">◐</button>
-      </div>
-      <nav class="tabs" role="tablist" aria-label="보기 선택">
-        <button class="tab" role="tab" id="tab-shelf" aria-selected="true" data-view="shelf">📚 서가</button>
-        <button class="tab" role="tab" id="tab-graph" aria-selected="false" data-view="graph">🕸 지식 그래프</button>
-        <button class="tab" role="tab" id="tab-ideas" aria-selected="false" data-view="ideas">💡 연구 아이디어</button>
-      </nav>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-row">
+      <h1>연구 Vault 관계망</h1>
+      <span class="sub">프라이빗 지식 Vault의 최소 컨텍스트만 받아 그리는 관계 지도</span>
+      <span class="spacer"></span>
+      <span id="countBadge" class="count-badge">불러오는 중…</span>
+      <span id="srcBadge" class="count-badge" title="이 데이터가 생성된 프라이빗 저장소와 커밋"></span>
+      <button id="themeBtn" class="icon-btn" title="라이트/다크 전환" aria-label="라이트/다크 전환">◐</button>
     </div>
-  </header>
+    <nav class="tabs" role="tablist">
+      <button class="tab" role="tab" data-view="network" aria-selected="true">🕸 관계망</button>
+      <button class="tab" role="tab" data-view="shelf" aria-selected="false">📚 서가</button>
+    </nav>
+  </div>
+</header>
 
-  <main class="wrap">
-    <div class="controls" id="controls">
-      <div class="search">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        <input id="searchBox" type="search" placeholder="제목·저자·내용 검색" aria-label="논문 검색" />
-      </div>
-      <div class="chips" id="topicChips" role="group" aria-label="주제 필터"></div>
-      <div class="chips" id="diffChips" role="group" aria-label="난이도 필터"></div>
+<main class="wrap">
+  <div id="controls" class="controls">
+    <div class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <input id="searchBox" type="search" placeholder="논문·저자·키워드 검색" aria-label="검색">
     </div>
-
-    <section id="view-shelf" role="tabpanel" aria-labelledby="tab-shelf"></section>
-
-    <section id="view-graph" role="tabpanel" aria-labelledby="tab-graph" hidden>
-      <div class="graph-card">
-        <canvas id="graphCanvas" aria-label="논문 관계 그래프. 노드를 클릭하면 해당 노트가 열립니다."></canvas>
-        <div class="graph-legend" id="graphLegend">
-          <span class="item"><span class="leg-line"></span> 토대로 발전 (builds-on)</span>
-          <span class="item"><span class="leg-line extends"></span> 확장 (extends)</span>
-          <span class="item"><span class="leg-line contradicts"></span> 반박·충돌 (contradicts)</span>
-          <span class="item"><span class="leg-line related"></span> 관련 (related)</span>
-          <span class="graph-hint">노드 클릭 = 노트 열기 · 드래그 = 이동</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="view-ideas" role="tabpanel" aria-labelledby="tab-ideas" hidden></section>
-
-    <footer>
-      <span>논문 원문 PDF는 저작권 보호를 위해 게시하지 않습니다 — 이 서재는 요약·해석(2차 창작)만 담습니다.</span>
-      <span>노트는 Obsidian 호환 마크다운(<code>library/notes/</code>)으로 관리됩니다.</span>
-    </footer>
-  </main>
-
-  <div class="overlay" id="noteOverlay" hidden>
-    <article class="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
-      <div class="panel-head">
-        <div class="row1">
-          <div style="flex:1">
-            <h2 id="panelTitle">—</h2>
-            <div class="en" id="panelEn"></div>
-          </div>
-          <button class="icon-btn" id="panelClose" title="닫기 (Esc)" aria-label="닫기">✕</button>
-        </div>
-        <div class="meta-row" id="panelMeta"></div>
-      </div>
-      <div class="panel-rel" id="panelRel" hidden></div>
-      <div class="panel-body"><div class="note-html" id="panelBody">불러오는 중…</div></div>
-    </article>
+    <div id="drillCrumb" class="crumb" hidden>
+      <button id="backBtn" class="chip" type="button">← 관계망으로</button>
+      <span id="crumbLabel" class="crumb-label"></span>
+    </div>
   </div>
 
-  <div class="tt" id="tooltip" role="status"></div>
-  <script src="./assets/app.js" defer></script>
+  <section id="view-network" class="graph-card" aria-label="관계망 그래프">
+    <div id="gate" class="gate" hidden>
+      <h2>🌱 Vault가 아직 쌓이는 중입니다</h2>
+      <p>관계망은 지식이 일정 수준 이상 축적되면 열립니다. 지금은 개별 Vault의 서가만 볼 수 있어요.</p>
+      <div class="gate-bars">
+        <div class="gate-bar"><span class="gb-label" id="gateVaultLabel"></span><div class="gb-track"><div class="gb-fill" id="gateVaultFill"></div></div></div>
+        <div class="gate-bar"><span class="gb-label" id="gateNoteLabel"></span><div class="gb-track"><div class="gb-fill" id="gateNoteFill"></div></div></div>
+      </div>
+    </div>
+    <canvas id="graphCanvas" aria-label="Vault 관계망 캔버스"></canvas>
+    <div class="graph-legend">
+      <span class="item"><span class="leg-line develop"></span>발전·확장</span>
+      <span class="item"><span class="leg-line related"></span>관련·언급</span>
+      <span class="item"><span class="leg-line contradicts"></span>충돌 ⚡</span>
+      <label class="item leg-toggle"><input id="gapToggle" type="checkbox" checked>
+        <span class="leg-line gap"></span>공백(잇지 않은 이웃)</label>
+      <span class="graph-hint">드래그 이동 · 휠 확대 · 노드 클릭으로 들어가기</span>
+    </div>
+    <div class="disclaimer">이 그래프의 장력은 지식의 진위를 판단하지 않습니다 — 연결·보완·충돌·공백을 탐색하기 위한 시각화입니다.</div>
+  </section>
+
+  <section id="view-shelf" hidden aria-label="Vault 서가"></section>
+
+  <footer>
+    <span>노트 본문·논문 PDF는 프라이빗 vault(<a href="https://github.com/quantddubi/test1" rel="noopener" target="_blank">quantddubi/test1</a>)에만 있습니다.</span>
+    <span>여기 공개되는 것은 출처·권한·키워드가 붙은 최소 컨텍스트뿐입니다.</span>
+  </footer>
+</main>
+
+<div id="tooltip" class="tt" role="tooltip"></div>
+
+<div id="cardOverlay" class="overlay" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="cardTitle">
+    <div class="panel-head">
+      <div class="row1">
+        <h2 id="cardTitle"></h2>
+        <button id="cardClose" class="icon-btn" title="닫기" aria-label="닫기">✕</button>
+      </div>
+      <div class="en" id="cardSub"></div>
+      <div class="meta-row" id="cardMeta"></div>
+    </div>
+    <div class="panel-body" id="cardBody"></div>
+  </div>
+</div>
+
+<script src="./assets/app.js"></script>
 </body>
 </html>

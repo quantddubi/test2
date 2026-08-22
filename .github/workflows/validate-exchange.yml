@@ -1,0 +1,27 @@
+name: Validate exchange
+
+# data/exchange.json (test1이 배달하는 최소 컨텍스트)이 vault-exchange/1 계약을 지키는지,
+# 본문류 유출이 없는지 검증한다. 실패해도 자동 되돌리기는 하지 않는다 — 빨간불이 신호다.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/exchange.json'
+      - 'scripts/validate_exchange.py'
+      - '.github/workflows/validate-exchange.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate
+        run: python scripts/validate_exchange.py
