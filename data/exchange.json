@@ -3,7 +3,7 @@
  "source": {
   "repo": "quantddubi/test1",
   "visibility": "private",
-  "commit": "05137d2"
+  "commit": "8c1e88a"
  },
  "threshold": {
   "min_vaults": 3,
