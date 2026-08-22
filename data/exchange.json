@@ -3,17 +3,17 @@
  "source": {
   "repo": "quantddubi/test1",
   "visibility": "private",
-  "commit": "23a6d5f"
+  "commit": "0799951"
  },
  "threshold": {
   "min_vaults": 3,
   "min_total_notes": 12
  },
  "stats": {
-  "vault_count": 8,
-  "note_count": 40,
-  "edge_count": 246,
-  "cross_edge_count": 131
+  "vault_count": 9,
+  "note_count": 50,
+  "edge_count": 305,
+  "cross_edge_count": 141
  },
  "vaults": [
   {
@@ -488,6 +488,267 @@
       "pdf": "papers/(Equity) Tetlock, 2007, JF, Giving Content to Investor Sentiment.pdf"
      },
      "one_liner": "월스트리트저널 시황 칼럼의 비관적 단어 비중이 1표준편차 오르면 다우지수가 다음 날 8.1bp 떨어졌다가 그 주 안에 6.8bp를 되돌린다 — 뉴스가 새 정보가 아니라 투자자 심리를 실어 나른다는 첫 대규모 증거"
+    }
+   ]
+  },
+  {
+   "id": "institutional-frictions",
+   "title": "Institutional Frictions",
+   "title_ko": "기관투자자 제약",
+   "permission": "summary",
+   "note_count": 10,
+   "keywords": [
+    "규제",
+    "기관투자자",
+    "리스크관리",
+    "보험",
+    "연금",
+    "자산배분",
+    "채권",
+    "화재매각",
+    "회계제도"
+   ],
+   "description_ko": "연기금·보험사의 자산배분을 왜곡하는 제도적 마찰 — 규제자본, 회계제도, 할인율 유인, 도달수익률(reaching for yield), 화재매각.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/institutional-frictions",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": [
+    {
+     "id": "andonov-bauer-cremers-2017",
+     "vault": "institutional-frictions",
+     "title": "Pension Fund Asset Allocation and Liability Discount Rates",
+     "title_ko": "할인율을 지키려고 위험을 산다 — 미국 공적연금의 회계 유인과 그 대가",
+     "authors": [
+      "Aleksandar Andonov",
+      "Rob M. M. J. Bauer",
+      "K. J. Martijn Cremers"
+     ],
+     "year": 2017,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "연금",
+      "기관투자자",
+      "자산배분"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Andonov_ Bauer_ Cremers, 2017, RFS, Pension Fund Asset Allocation and Liability Discount Rates.pdf"
+     },
+     "one_liner": "미국 공적연금만 부채 할인율을 '자산 기대수익률'로 정할 수 있어서, 금리가 7%→2%로 떨어지는 동안 위험자산 비중을 늘려 할인율을 8% 근처에 묶어뒀다 — 2012년 미국 공적연금 할인율 7.71% vs 미국 기업연금 4.36%, 그 대가는 연 약 50bp의 성과 미달"
+    },
+    {
+     "id": "andonov-rauh-2022",
+     "vault": "institutional-frictions",
+     "title": "The Return Expectations of Public Pension Funds",
+     "title_ko": "과거 성과를 미래에 덧칠한다 — 공적연기금 기대수익률의 외삽",
+     "authors": [
+      "Aleksandar Andonov",
+      "Joshua D. Rauh"
+     ],
+     "year": 2022,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "연금",
+      "기관투자자",
+      "자산배분"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Andonov_ Rauh, 2022, RFS, The Return Expectations of Public Pension Funds.pdf"
+     },
+     "one_liner": "미국 공적연기금 228곳의 GASB 67 공시를 뜯어보니, 지난 10년 수익률이 다른 기금보다 1%p 높았던 기금은 장기 기대수익률을 30bp 더 높게 잡고 위험자산 목표비중을 2%p 더 높게 설정한다 — 성과 지속성·위험·리밸런싱 비용·재정 유인 어느 것으로도 설명되지 않는 '외삽'이다"
+    },
+    {
+     "id": "becker-ivashina-2015",
+     "vault": "institutional-frictions",
+     "title": "Reaching for Yield in the Bond Market",
+     "title_ko": "같은 등급 칸 안에서 가장 위험한 것을 고른다 — 보험사의 규제자본 차익거래",
+     "authors": [
+      "Bo Becker",
+      "Victoria Ivashina"
+     ],
+     "year": 2015,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "보험",
+      "기관투자자",
+      "채권"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Becker_ Ivashina, 2015, JF, Reaching for Yield in the Bond Market.pdf"
+     },
+     "one_liner": "신용등급으로 자본요구를 매기면 보험사는 같은 NAIC 등급 칸 안에서 가장 수익률이 높은 채권을 골라 담는다 — 위기 전 NAIC 1 채권 중 최저수익률 4분위는 72%, 최고수익률 4분위는 88%가 보험사에게 갔고, 그 채권들의 알파는 월 −36~−68bp였다"
+    },
+    {
+     "id": "becker-opp-saidi-2022",
+     "vault": "institutional-frictions",
+     "title": "Regulatory Forbearance in the U.S. Insurance Industry: The Effects of Removing Capital Requirements for an Asset Class",
+     "title_ko": "자본규제를 한 자산군에서만 지웠더니 — 2009년 미국 보험 MBS 개혁의 결과",
+     "authors": [
+      "Bo Becker",
+      "Marcus M. Opp",
+      "Farzad Saidi"
+     ],
+     "year": 2022,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "보험",
+      "기관투자자",
+      "채권"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Becker_ Opp_ Saidi, 2022, RFS, Regulatory Forbearance in the U.S. Insurance Industry - The Effects of Removing Capital Requi.pdf"
+     },
+     "one_liner": "2009년 NAIC 개혁으로 비(非)에이전시 MBS의 자본요구가 사실상 0이 되자(2015년 기준 규제자본 약 92% 경감) 보험사는 등급이 강등된 MBS를 더 이상 팔지 않게 됐고, 자본요구가 1%p 오를 때 매도확률이 생보 0.34%p·손보 0.25%p 오른다는 회귀단절 추정이 그 원인이 자본규제임을 확인한다"
+    },
+    {
+     "id": "ellul-jotikasthira-kartasheva-2022",
+     "vault": "institutional-frictions",
+     "title": "Insurers as Asset Managers and Systemic Risk",
+     "title_ko": "보험사가 판 최저보증이 채권 화재매각으로 돌아온다 — 변액연금 보증의 시스템 리스크",
+     "authors": [
+      "Andrew Ellul",
+      "Chotibhak Jotikasthira",
+      "Anastasia Kartasheva",
+      "Christian T. Lundblad",
+      "Wolf Wagner"
+     ],
+     "year": 2022,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "보험",
+      "기관투자자",
+      "리스크관리"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Ellul_ Jotikasthira_ Kartasheva_ Lundblad_ Wagner, 2022, RFS, Insurers as Asset Managers and Systemic Risk.pdf"
+     },
+     "one_liner": "변액연금 최저보증을 판 미국 생명보험사는 규제자본(RBC) 제약 아래서 보증의 71.5%만 헤지하고 그렇게 아낀 자본으로 비유동채권을 6.4%p(약 1,740억 달러) 더 사들이는데, 2008년급 충격에 신용등급 강등까지 겹치면 이 보증 때문에 추가로 발생하는 화재매각 비용만 958억 달러 — 보험사 자기자본의 37% — 에 이른다"
+    },
+    {
+     "id": "ellul-jotikasthira-lundblad-2015",
+     "vault": "institutional-frictions",
+     "title": "Is Historical Cost Accounting a Panacea? Market Stress, Incentive Distortions, and Gains Trading",
+     "title_ko": "역사적원가는 만병통치약이 아니다 — 규제자본이 만든 '이익 골라 팔기'와 채권시장 전염",
+     "authors": [
+      "Andrew Ellul",
+      "Chotibhak Jotikasthira",
+      "Christian T. Lundblad",
+      "Yihui Wang"
+     ],
+     "year": 2015,
+     "venue": "The Journal of Finance",
+     "keywords": [
+      "보험",
+      "기관투자자",
+      "채권"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Is Historical Cost Accounting a Panacea - Market Stress, Incentive Distortions, and Gains Trading.pdf"
+     },
+     "one_liner": "부실화된 ABS를 시가로 안 적어도 되는 생명보험사는 그 ABS를 P&C보다 2.8~3.3%p 덜 팔지만, 대신 자본비율을 메우려고 미실현이익이 큰 무관한 회사채를 골라 파는 '게인즈 트레이딩'으로 옮겨가고, 그 표적이 된 회사채는 위기 중 분기수익률이 0.63%p 낮아진다"
+    },
+    {
+     "id": "ge-weisbach-2021",
+     "vault": "institutional-frictions",
+     "title": "The Role of Financial Conditions in Portfolio Choices: The Case of Insurers",
+     "title_ko": "손실을 본 보험사는 더 안전한 채권으로 간다 — 날씨 재해로 확인한 재무상태와 포트폴리오",
+     "authors": [
+      "Shan Ge",
+      "Michael S. Weisbach"
+     ],
+     "year": 2021,
+     "venue": "Journal of Financial Economics",
+     "keywords": [
+      "기관투자자",
+      "보험",
+      "채권"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Ge_ Weisbach, 2021, JFE, The Role of Financial Conditions in Portfolio Choices - The Case of Insurers.pdf"
+     },
+     "one_liner": "손해보험사가 보험영업에서 1표준편차(자산의 4.6%)의 손실을 보면 규제상 자본부담이 똑같은 채권들 사이에서도 A-등급 보유를 AAA 대비 0.05%p(중앙값의 39%) 줄인다 — 태풍·산불 같은 날씨 재해를 도구변수로 쓴 인과 추정으로, 재무가 나빠진 기관은 도박이 아니라 안전으로 간다는 증거"
+    },
+    {
+     "id": "jansen-2025",
+     "vault": "institutional-frictions",
+     "title": "Long-Term Investors, Demand Shifts, and Yields",
+     "title_ko": "규제가 부채를 재는 자를 바꾸자 금리곡선이 휘었다 — 연금·보험의 만기 이동과 그것을 받아준 은행",
+     "authors": [
+      "Kristy A. E. Jansen"
+     ],
+     "year": 2025,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "기관투자자",
+      "채권",
+      "연금"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Jansen, 2025, RFS, Long-Term Investors, Demand Shifts, and Yields.pdf"
+     },
+     "one_liner": "2012년 네덜란드 감독당국이 연금·보험의 부채 할인곡선을 20년 금리 중심으로 바꾸자 이들이 30년 국채를 33% 줄이고 20년 국채를 17% 늘렸고, 그 물량을 받아준 것은 가격탄력성 14.95로 가장 탄력적인 은행이었다 — 30년 금리는 17bp 올랐다"
+    },
+    {
+     "id": "koijen-yogo-2022",
+     "vault": "institutional-frictions",
+     "title": "The Fragility of Market Risk Insurance",
+     "title_ko": "위기가 오면 보증이 사라진다 — 변액연금과 시장위험 보험의 취약성",
+     "authors": [
+      "Ralph S. J. Koijen",
+      "Motohiro Yogo"
+     ],
+     "year": 2022,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "보험",
+      "기관투자자",
+      "리스크관리"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Koijen_ Yogo, 2022, JF, The Fragility of Market Risk Insurance.pdf"
+     },
+     "one_liner": "미국 생보사 부채의 35%($1.5조)를 차지하는 변액연금에서, 금융위기로 기존 보증의 준비금 평가가 0.8%→4.1%로 뛰자 판매는 줄고 수수료는 2.04%→2.38%로 올랐는데, 그 34bp 인상분 중 17bp가 '자본의 그림자비용'이어서 재무적 마찰이 옵션가격 요인(16bp)만큼 컸다"
+    },
+    {
+     "id": "rauh-2009",
+     "vault": "institutional-frictions",
+     "title": "Risk Shifting versus Risk Management: Investment Policy in Corporate Pension Plans",
+     "title_ko": "망하기 직전의 기업은 연금으로 도박하지 않는다 — 위험전가와 위험관리가 부딪히는 자리",
+     "authors": [
+      "Joshua D. Rauh"
+     ],
+     "year": 2009,
+     "venue": "Review of Financial Studies",
+     "keywords": [
+      "연금",
+      "기관투자자",
+      "리스크관리"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/Rauh, 2009, RFS, Risk Shifting versus Risk Management - Investment Policy in Corporate Pension Plans.pdf"
+     },
+     "one_liner": "미국 기업 확정급여 연금 55,684개 관측치에서 적립률이 10%p 높은 플랜일수록 주식 비중이 0.55~0.68%p 더 높았고 신용등급이 좋은 기업일수록 연금 주식비중이 8~10%p 높았다 — 정부보증(PBGC)을 노린 위험전가가 아니라 재무곤경을 피하려는 위험관리가 지배한다"
     }
    ]
   },
@@ -1138,6 +1399,122 @@
  ],
  "edges": [
   {
+   "source": "andonov-bauer-cremers-2017",
+   "source_vault": "institutional-frictions",
+   "target": "andonov-rauh-2022",
+   "target_vault": "institutional-frictions",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 1저자의 직계 후속. 여기서 '할인율=기대수익률'로 남긴 블랙박스를 자산군별 기대수익률로 분해해 검증"
+  },
+  {
+   "source": "andonov-bauer-cremers-2017",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "규제상 측정치(신용등급 기반 자본요구)를 만족시키며 위험을 더 지는 보험사의 수익률 추구 — 같은 구조의 다른 기관"
+  },
+  {
+   "source": "andonov-bauer-cremers-2017",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-lundblad-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "회계·측정 규칙이 기관의 포트폴리오 선택을 왜곡한다는 동일 문제의식을 보험사 역사적원가회계에서 검증"
+  },
+  {
+   "source": "andonov-bauer-cremers-2017",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "andonov-bauer-cremers-2017",
+   "source_vault": "institutional-frictions",
+   "target": "rauh-2009",
+   "target_vault": "institutional-frictions",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Rauh(2009)의 '기업연금은 성숙할수록 위험을 줄인다'를 대조군에서 재확인하고, 미국 공적연금만 정반대임을 보여 국제 비교로 확장"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "andonov-bauer-cremers-2017",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 제1저자의 직계 선행 연구. 그쪽은 할인율 규제가 자산배분을 왜곡함을 보였고, 이 논문은 그 할인율의 재료인 '기대수익률' 자체가 어떻게 만들어지는지를 파고든다. 본문에서 여러 차례 직접 인용"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "제도적 유인(여기서는 미적립부채·재정압박)이 기관의 위험추구를 낳는다는 같은 구조. 저쪽은 보험사의 도달수익률(reaching for yield), 이쪽은 연기금의 기대수익률 상향"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "demiguel-garlappi-uppal-2009",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "jansen-2025",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "5.2절에서 총수요 탄력성이 낮으면 연기금 자금흐름이 가격을 크게 움직인다고 주장하는데(Gabaix-Koijen 승수 5), 장기투자자 수요이동이 실제 금리에 미치는 영향을 측정한 연구와 문제의식이 맞물린다"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "markowitz-1952",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "andonov-rauh-2022",
+   "source_vault": "institutional-frictions",
+   "target": "rauh-2009",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자의 기업연금 연구. 각주 14에서 '2000년 기술주 폭락 후 기업연금이 주식 비중을 표류하게 두었다'는 결과를 인용하며, 실제 비중 대신 목표 비중을 써야 하는 이유의 근거로 삼는다"
+  },
+  {
    "source": "asness-frazzini-pedersen-2012",
    "source_vault": "portfolio-construction",
    "target": "asness-moskowitz-pedersen-2013",
@@ -1336,6 +1713,124 @@
    "target_vault": "factor-anomalies",
    "type": "mentions",
    "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "becker-ivashina-2015",
+   "source_vault": "institutional-frictions",
+   "target": "asness-frazzini-pedersen-2012",
+   "target_vault": "portfolio-construction",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "becker-ivashina-2015",
+   "source_vault": "institutional-frictions",
+   "target": "becker-opp-saidi-2022",
+   "target_vault": "institutional-frictions",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자(Becker)가 NAIC 등급기반 자본요구를 2009~2010년에 실제로 없앤 사건을 자연실험으로 활용 — 이 논문이 추론한 메커니즘의 직접 검증"
+  },
+  {
+   "source": "becker-ivashina-2015",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-kartasheva-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Section IV.A의 '보험사 포트폴리오에 시스템 위험이 집중된다'는 함의를 자산운용자로서의 보험사 전체로 확장"
+  },
+  {
+   "source": "becker-ivashina-2015",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-lundblad-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문 Section I.B의 핵심 전제(상각원가 회계 때문에 약정수익률이 곧 회계이익)를 정면으로 다루는 연구"
+  },
+  {
+   "source": "becker-ivashina-2015",
+   "source_vault": "institutional-frictions",
+   "target": "ge-weisbach-2021",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "보험사의 재무상태(자본)가 포트폴리오 선택을 좌우한다는 동일 논리를 자본잉여 대신 손실충격으로 식별"
+  },
+  {
+   "source": "becker-ivashina-2015",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "논문이 Koijen-Yogo(2012)를 인용해 위기 중 보험산업 전반의 손실을 근거로 삼는다. 보험사 재무제약이 가격·공급을 왜곡하는 같은 문제의식"
+  },
+  {
+   "source": "becker-opp-saidi-2022",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 NAIC 등급 안에서 고수익 채권을 고르는 '도달수익률'의 직계 후속 — 여기서는 등급 구간 자체가 사라진 경우를 본다"
+  },
+  {
+   "source": "becker-opp-saidi-2022",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-kartasheva-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "개혁 동기 중 하나로 제시된 '산업 전반 매도로 인한 화재매각 할인 완화' 논거의 근거로 인용(Ellul et al. 2018 = RFS 2022)"
+  },
+  {
+   "source": "becker-opp-saidi-2022",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-lundblad-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Table 10에서 BP−MP를 통제해 '이익실현매도(gains trading)'를 걸러내는데, 그 개념과 측정이 이 논문에서 온다"
+  },
+  {
+   "source": "becker-opp-saidi-2022",
+   "source_vault": "institutional-frictions",
+   "target": "ge-weisbach-2021",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "재무상태가 보험사 포트폴리오 선택을 좌우한다는 같은 문제의식 — 이 논문의 RBC·BCAR 하위 3분위 이질성 결과와 짝을 이룬다"
+  },
+  {
+   "source": "becker-opp-saidi-2022",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Table 7의 변액연금 노출 이질성 분할이 Koijen-Yogo(2018 NBER WP = 2022 JF)의 변액연금 부채 측정을 그대로 사용"
+  },
+  {
+   "source": "becker-opp-saidi-2022",
+   "source_vault": "institutional-frictions",
+   "target": "rauh-2009",
+   "target_vault": "institutional-frictions",
+   "type": "mentions",
+   "cross": false,
    "origin": "wikilink"
   },
   {
@@ -2108,6 +2603,124 @@
    "note": "시계열 모멘텀 전략을 자산이 아닌 팩터 수익률에 적용한 형태 — Goyal-Jegadeesh 롱 편향 문제도 PC 팩터 평균수익을 0으로 맞춰 회피"
   },
   {
+   "source": "ellul-jotikasthira-kartasheva-2022",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "보험사의 도달수익률을 '같은 등급 안에서 고수익 채권 선택'으로 측정한 대표 연구. 이 논문은 같은 현상을 '유동성 축'에서 재정의한다"
+  },
+  {
+   "source": "ellul-jotikasthira-kartasheva-2022",
+   "source_vault": "institutional-frictions",
+   "target": "becker-opp-saidi-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 산업의 규제자본 룰을 다룬다. 이 논문은 그 저자들의 2009~2010년 회계개편 후 MBS 장부가 추정치를 시가평가 가정에 사용한다"
+  },
+  {
+   "source": "ellul-jotikasthira-kartasheva-2022",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-lundblad-2015",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "시뮬레이션의 부분 시가평가 가정을 그대로 가져온다 — 금융위기 중 강등 MBS의 71~79%가 여전히 시가평가 대상이 아니었다는 추정치"
+  },
+  {
+   "source": "ellul-jotikasthira-kartasheva-2022",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "논문이 스스로 '보완적(complementary) 모형'이라 부르는 짝. 저쪽은 보증을 얼마나·얼마나 후하게 팔지(부채 측)를, 이쪽은 그 보증이 자산 측 포트폴리오를 어떻게 바꾸는지를 다룬다"
+  },
+  {
+   "source": "ellul-jotikasthira-kartasheva-2022",
+   "source_vault": "institutional-frictions",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ellul-jotikasthira-kartasheva-2022",
+   "source_vault": "institutional-frictions",
+   "target": "rauh-2009",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "보증+과소적립이 위험선호를 낳는다는 확정급여 연기금 판 논리. 서론에서 보증→도달수익률 문헌의 선례로 직접 인용된다"
+  },
+  {
+   "source": "ellul-jotikasthira-lundblad-2015",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문 각주 39가 Becker-Ivashina로 인용 — 같은 규제자본 마찰이 자산 '선택'을 왜곡하는 다른 경로(도달수익률). 이쪽은 '매도'를 왜곡한다"
+  },
+  {
+   "source": "ellul-jotikasthira-lundblad-2015",
+   "source_vault": "institutional-frictions",
+   "target": "becker-opp-saidi-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문이 Becker and Opp(2014)로 인용 — 보험업계가 밀어붙여 성사된 NAIC의 MBS 자본평가 방식 변경. 이 논문이 기록한 규제자본 압박의 정치적 귀결"
+  },
+  {
+   "source": "ellul-jotikasthira-lundblad-2015",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-kartasheva-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자팀 계열의 보험사 규제·자산운용 연구. 본문 각주 40이 위기 이전 기간의 유사 분석으로 'Ellul et al.(2014)'을 인용한다"
+  },
+  {
+   "source": "ellul-jotikasthira-lundblad-2015",
+   "source_vault": "institutional-frictions",
+   "target": "ge-weisbach-2021",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "보험사의 자본상태가 포트폴리오 선택을 좌우한다는 같은 문제의식. 이 논문은 그중 회계제도라는 특정 마찰을 분리해 식별한다"
+  },
+  {
+   "source": "ellul-jotikasthira-lundblad-2015",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문 각주 14가 인용 — RBC 분자를 올리는 다른 수단(원가 이하 보험 판매, 그림자보험). 게인즈 트레이딩과 대체재 관계에 있는 자본조달 채널"
+  },
+  {
+   "source": "ellul-jotikasthira-lundblad-2015",
+   "source_vault": "institutional-frictions",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
    "source": "engelberg-mclean-pontiff-2018",
    "source_vault": "factor-anomalies",
    "target": "bowles-reed-ringgenberg-2024",
@@ -2426,6 +3039,74 @@
    "type": "mentions",
    "cross": true,
    "origin": "wikilink"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "andonov-bauer-cremers-2017",
+   "target_vault": "institutional-frictions",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "공적연기금은 적립부족이 심할수록 오히려 위험자산 비중을 높인다(각주 5에서 인용) — 보험사에서 관찰된 방향과 정반대"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "위기 중 보험사의 도달수익률(reaching for yield)이 약해진다는 발견과 정합 — 이 논문은 그 배경 원인을 재무상태로 지목"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "becker-opp-saidi-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Table 1의 MBS 위험계수 출처로 직접 인용 — 규제 자본부담이 보험사 보유를 어떻게 왜곡하는지 다룬 짝 연구"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-kartasheva-2022",
+   "target_vault": "institutional-frictions",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "markowitz-1952",
+   "target_vault": "portfolio-construction",
+   "type": "builds-on",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "논문 첫 문장이 Markowitz — '선호'가 없는 조직에게 위험-수익 트레이드오프란 무엇인가로 문제를 다시 세운다"
+  },
+  {
+   "source": "ge-weisbach-2021",
+   "source_vault": "institutional-frictions",
+   "target": "rauh-2009",
+   "target_vault": "institutional-frictions",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "적립부족 연기금이 안전자산을 늘린다는 결과를 보험사로 확장 — 논문이 직접 인용하며 '두 가지를 개선했다'(날씨 도구변수, CUSIP 단위 자산군 내 비교)고 명시"
   },
   {
    "source": "goyal-welch-zafirov-2024",
@@ -2792,6 +3473,55 @@
    "note": "그쪽의 거래비용 추정은 전적으로 Hasbrouck(2009) 깁스 스프레드에 의존하는데, 이 논문은 바로 그 측정치를 변동성 편의 그룹1로 분류한다(MTAQ 월간 상대편의 3.20배)"
   },
   {
+   "source": "jansen-2025",
+   "source_vault": "institutional-frictions",
+   "target": "andonov-bauer-cremers-2017",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "규제 할인율이 연기금 자산배분을 왜곡한다는 직계 선행 연구 — 본문이 명시 인용하며, 이 논문은 그 왜곡을 준자연실험으로 인과 식별한다"
+  },
+  {
+   "source": "jansen-2025",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "규제 자본 제약 하의 수익률 추구. 이 논문에서 부채가 줄어 생긴 자본여력이 하이일드 국채·주식 비중 증가로 이어지는 것과 같은 결"
+  },
+  {
+   "source": "jansen-2025",
+   "source_vault": "institutional-frictions",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "jansen-2025",
+   "source_vault": "institutional-frictions",
+   "target": "ge-weisbach-2021",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "제약이 조일수록 위험자산 비중이 낮아진다는 결과를 본문이 인용 — 이 논문은 규제 완화(자본여력 증가) 방향에서 같은 관계를 확인"
+  },
+  {
+   "source": "jansen-2025",
+   "source_vault": "institutional-frictions",
+   "target": "koijen-yogo-2022",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "'한 부문의 규제를 다른 부문과 떼어놓고 보면 안 된다'는 문제제기를 본문이 직접 인용하고, 연금·보험 규제가 은행으로 파급되는 증거로 답한다"
+  },
+  {
    "source": "jegadeesh-titman-1993",
    "source_vault": "momentum",
    "target": "asness-frazzini-pedersen-2012",
@@ -3043,6 +3773,65 @@
    "cross": false,
    "origin": "frontmatter",
    "note": "이 논문의 핵심 종속변수인 유효·실현스프레드를 어떻게 신뢰성 있게 측정하는가"
+  },
+  {
+   "source": "koijen-yogo-2022",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 규제자본 제약 아래 보험사가 자산 측면에서 수익률 추구를 하는 반면, 여기서는 부채 측면에서 위험을 줄인다 — 제약의 두 얼굴"
+  },
+  {
+   "source": "koijen-yogo-2022",
+   "source_vault": "institutional-frictions",
+   "target": "becker-opp-saidi-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "자본요건을 '완화'했을 때 보험사 행동 변화를 보는 반대 방향 실험. 이 논문의 그림자비용 채널에 대한 자연스러운 대조군"
+  },
+  {
+   "source": "koijen-yogo-2022",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-kartasheva-2022",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "Ellul et al.(2018) 워킹페이퍼로 직접 인용 — 변액연금 익스포저가 채권 화재매각 취약성으로 이어지는 자산 측면을 다룸(이 논문은 부채 측면)"
+  },
+  {
+   "source": "koijen-yogo-2022",
+   "source_vault": "institutional-frictions",
+   "target": "ellul-jotikasthira-lundblad-2015",
+   "target_vault": "institutional-frictions",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "각주 6에서 직접 인용 — 자본이 낮을수록 자산배분·부채가격이 민감해진다는 증거가 이 논문 모형의 '볼록 비용함수' 가정의 실증적 토대"
+  },
+  {
+   "source": "koijen-yogo-2022",
+   "source_vault": "institutional-frictions",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "koijen-yogo-2022",
+   "source_vault": "institutional-frictions",
+   "target": "rauh-2009",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "결론에서 '생보사가 연기금을 닮아간다(위험자산 + 보장부채)'고 직접 유비. 보장부채 아래의 위험전가 문제라는 공통 축"
   },
   {
    "source": "kozak-nagel-santosh-2020",
@@ -3349,6 +4138,55 @@
    "note": "발표 후 수익 감소를 다룬 연구가 정작 거래비용을 반영하지 않았다는 점을 지적하며 그 공백을 메운다"
   },
   {
+   "source": "rauh-2009",
+   "source_vault": "institutional-frictions",
+   "target": "andonov-bauer-cremers-2017",
+   "target_vault": "institutional-frictions",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "공적연금에서는 부호가 뒤집힌다 — 할인율을 기대수익률에 묶는 회계규정 때문에 적립률이 낮을수록 위험자산을 더 담는다는 정반대 결과"
+  },
+  {
+   "source": "rauh-2009",
+   "source_vault": "institutional-frictions",
+   "target": "andonov-rauh-2022",
+   "target_vault": "institutional-frictions",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자가 무대를 기업 DB에서 공적연금으로 옮겨, 여기서 미해결로 남긴 '기대수익률을 맞추려 주식을 담는다'는 채널을 정면으로 다룬다"
+  },
+  {
+   "source": "rauh-2009",
+   "source_vault": "institutional-frictions",
+   "target": "becker-ivashina-2015",
+   "target_vault": "institutional-frictions",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 기관투자자 유인 문제의 반대편 사례 — 규제 자본 제약이 오히려 등급 내 수익률 추구(위험 확대)를 낳는 경로"
+  },
+  {
+   "source": "rauh-2009",
+   "source_vault": "institutional-frictions",
+   "target": "ge-weisbach-2021",
+   "target_vault": "institutional-frictions",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "보험사에서 같은 패턴 — 재무상태가 나빠지면 투자 포트폴리오를 안전자산으로 옮긴다. 기관 유형을 바꿔 '위험관리 우세' 결론을 확장"
+  },
+  {
+   "source": "rauh-2009",
+   "source_vault": "institutional-frictions",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
    "source": "sullivan-timmermann-white-1999",
    "source_vault": "factor-anomalies",
    "target": "gu-kelly-xiu-2020",
@@ -3558,6 +4396,21 @@
   },
   {
    "a": "etf-microstructure",
+   "b": "institutional-frictions",
+   "shared_keywords": [
+    "기관투자자"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 1
+   },
+   "strength": 0.25
+  },
+  {
+   "a": "etf-microstructure",
    "b": "market-timing",
    "shared_keywords": [
     "실증검증"
@@ -3646,6 +4499,19 @@
   },
   {
    "a": "factor-anomalies",
+   "b": "institutional-frictions",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 1
+   },
+   "strength": 0.25
+  },
+  {
+   "a": "factor-anomalies",
    "b": "market-timing",
    "shared_keywords": [
     "마켓타이밍",
@@ -3728,6 +4594,19 @@
   },
   {
    "a": "information-attention",
+   "b": "institutional-frictions",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
    "b": "market-timing",
    "shared_keywords": [
     "마켓타이밍",
@@ -3800,6 +4679,82 @@
     "mentions": 0
    },
    "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "market-timing",
+   "shared_keywords": [
+    "자산배분"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [
+    "자산배분"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "momentum",
+   "shared_keywords": [
+    "리스크관리"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "portfolio-construction",
+   "shared_keywords": [
+    "자산배분"
+   ],
+   "edge_counts": {
+    "builds-on": 1,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 3
+   },
+   "strength": 1.75
+  },
+  {
+   "a": "institutional-frictions",
+   "b": "volatility-management",
+   "shared_keywords": [
+    "리스크관리",
+    "자산배분"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 4
+   },
+   "strength": 1.0
   },
   {
    "a": "market-timing",
