@@ -3,19 +3,261 @@
  "source": {
   "repo": "quantddubi/test1",
   "visibility": "private",
-  "commit": "8c1e88a"
+  "commit": "23a6d5f"
  },
  "threshold": {
   "min_vaults": 3,
   "min_total_notes": 12
  },
  "stats": {
-  "vault_count": 6,
-  "note_count": 30,
-  "edge_count": 183,
-  "cross_edge_count": 115
+  "vault_count": 8,
+  "note_count": 40,
+  "edge_count": 246,
+  "cross_edge_count": 131
  },
  "vaults": [
+  {
+   "id": "etf-microstructure",
+   "title": "ETF & Market Microstructure",
+   "title_ko": "ETF·시장미시구조",
+   "permission": "summary",
+   "note_count": 9,
+   "keywords": [
+    "ETF",
+    "가격발견",
+    "금융혁신",
+    "기관투자자",
+    "변동성",
+    "시장미시구조",
+    "실증검증",
+    "유동성",
+    "차익거래",
+    "투자자심리"
+   ],
+   "description_ko": "ETF라는 그릇이 시장의 유동성·변동성·정보 전달을 어떻게 바꾸는가 — 차익거래 메커니즘, 지정판매자, 일중 가격발견, 스프레드 측정.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/etf-microstructure",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": [
+    {
+     "id": "bae-kim-2020",
+     "vault": "etf-microstructure",
+     "title": "Liquidity risk and exchange-traded fund returns, variances, and tracking errors",
+     "title_ko": "거래가 안 되는 ETF는 지수를 놓친다 — 유동성이 추적오차·수익·변동성에 남기는 흔적",
+     "authors": [
+      "Kyounghun Bae",
+      "Daejin Kim"
+     ],
+     "year": 2020,
+     "venue": "Journal of Financial Economics",
+     "keywords": [
+      "ETF",
+      "유동성",
+      "시장미시구조"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Bae and Kim, 2020, JFE, Liquidity Risk and Exchange-Traded Fund Returns, Variances, and Tracking Errors.pdf"
+     },
+     "one_liner": "미국 상장 ETF 1,307개를 뜯어보니 ETF '껍데기' 자체의 호가스프레드가 넓을수록 지수 추적오차가 커졌고, 거래일의 67%를 거래되지 않은 ETF는 연 분산이 NAV 분산보다 19.84%p나 높았다 — 기대수익은 그대로인데 위험만 늘어나는 순손실이다"
+    },
+    {
+     "id": "ben-david-franzoni-kim-2023",
+     "vault": "etf-microstructure",
+     "title": "Competition for Attention in the ETF Space",
+     "title_ko": "ETF는 왜 테마로 진화했나 — 특화 ETF의 출시 후 5년 −30%",
+     "authors": [
+      "Itzhak Ben-David",
+      "Francesco Franzoni",
+      "Byungwook Kim",
+      "Rabih Moussawi"
+     ],
+     "year": 2023,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "ETF",
+      "투자자심리",
+      "금융혁신"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Ben-David, Franzoni, Kim and Moussawi, 2023, RFS, Competition for Attention in the ETF Space.pdf"
+     },
+     "one_liner": "미국 주식 ETF 1,007개를 분류했더니 특정 섹터·테마를 좇는 '특화 ETF'는 출시 후 5년간 위험조정 수익이 약 −30%(연 −6%)였는데, 원인은 높은 수수료가 아니라 출시 시점에 이미 고평가된 종목을 담기 때문이다"
+    },
+    {
+     "id": "ben-david-franzoni-moussawi-2018",
+     "vault": "etf-microstructure",
+     "title": "Do ETFs Increase Volatility?",
+     "title_ko": "ETF는 변동성을 키우는가 — 차익거래가 충격을 기초종목으로 실어 나른다",
+     "authors": [
+      "Itzhak Ben-David",
+      "Francesco Franzoni",
+      "Rabih Moussawi"
+     ],
+     "year": 2018,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "ETF",
+      "시장미시구조",
+      "유동성"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Ben-David, 2018, JF, Franzoni and Moussawi, Do ETFs Increase Volatility.pdf"
+     },
+     "one_liner": "ETF 보유비중이 1표준편차 높아지면 그 주식의 일간 변동성이 표준편차의 16.4%만큼 올라가는데, 이 변동성은 40일에 걸쳐 완전히 되돌아오는 '노이즈'이며 그 대가로 고ETF보유 종목은 월 최대 56bp의 프리미엄을 받는다"
+    },
+    {
+     "id": "box-davis-evans-2021",
+     "vault": "etf-microstructure",
+     "title": "Intraday arbitrage between ETFs and their underlying portfolios",
+     "title_ko": "ETF는 기초종목에 노이즈를 옮기지 않는다 — 9,460만 분(分)의 직접 검증",
+     "authors": [
+      "Travis Box",
+      "Ryan Davis",
+      "Richard Evans",
+      "Andrew Lynch"
+     ],
+     "year": 2021,
+     "venue": "Journal of Financial Economics",
+     "keywords": [
+      "ETF",
+      "시장미시구조",
+      "유동성"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Box, Davis, Evans and Lynch, 2021, JFE, Intraday Arbitrage between ETFs and Their Underlying Portfolios.pdf"
+     },
+     "one_liner": "423개 미국 주식 ETF의 분 단위 데이터 9,460만 건으로 'ETF 차익거래가 노이즈를 기초종목에 옮긴다'는 통설을 직접 검증했더니, ETF 수익률 충격이 기초종목 수익률의 예측오차 분산에서 차지하는 몫은 최대 0.26%에 불과했고 방향은 정반대로 기초종목 충격이 ETF 수익률 분산의 18.67~43.20%를 설명했다"
+    },
+    {
+     "id": "evans-moussawi-pagano-2026",
+     "vault": "etf-microstructure",
+     "title": "Operational Shorting and ETF Liquidity Provision",
+     "title_ko": "아직 만들지 않은 주식을 판다 — ETF 공매도의 3분의 2는 베팅이 아니라 유동성 공급",
+     "authors": [
+      "Richard B. Evans",
+      "Rabih Moussawi",
+      "Michael S. Pagano",
+      "John Sedunov"
+     ],
+     "year": 2026,
+     "venue": "Journal of Financial Economics",
+     "keywords": [
+      "ETF",
+      "시장미시구조",
+      "유동성"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Evans, Moussawi, Pagano and Sedunov, 2026, JFE, Operational Shorting and ETF Liquidity Provision.pdf"
+     },
+     "one_liner": "ETF 공매도 잔고의 약 64%는 주가 하락에 거는 방향성 베팅이 아니라 시장조성자가 '아직 만들지 않은 ETF 주식을 먼저 팔아' 매수 수요를 받아주는 유동성 공급이며, 이 운영적 공매도는 다음날 ETF 가격을 되돌리지만(계수 −0.78%) 기초자산 가격은 전혀 예측하지 못한다(−0.13%, t=−0.78)"
+    },
+    {
+     "id": "hasbrouck-2003",
+     "vault": "etf-microstructure",
+     "title": "Intraday Price Formation in U.S. Equity Index Markets",
+     "title_ko": "지수 가격은 어디서 만들어지는가 — ETF·플로어 선물·E-mini의 정보지분 해부",
+     "authors": [
+      "Joel Hasbrouck"
+     ],
+     "year": 2003,
+     "venue": "The Journal of Finance",
+     "keywords": [
+      "ETF",
+      "시장미시구조",
+      "가격발견"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Hasbrouck, JF, 2023, Intraday Price Formation in U.S. Equity Index Markets.pdf"
+     },
+     "one_liner": "같은 S&P 500 지수를 거래하는 네 개의 가격(ETF 호가·ETF 체결·플로어 선물·E-mini) 중 일중 가격발견의 약 89%가 전자거래 E-mini 선물에서 일어나고 ETF는 2~3%에 그치지만, E-mini가 없던 S&P 400에서는 ETF가 약 50%로 주도한다 — 가격을 만드는 것은 상품의 종류가 아니라 거래 방식이다"
+    },
+    {
+     "id": "huang-ohara-zhong-2021",
+     "vault": "etf-microstructure",
+     "title": "Innovation and Informed Trading: Evidence from Industry ETFs",
+     "title_ko": "산업 ETF는 정보거래자의 헤지 도구다 — 공매도잔고가 오히려 좋은 소식인 이유",
+     "authors": [
+      "Shiyang Huang",
+      "Maureen O’Hara",
+      "Zhuo Zhong"
+     ],
+     "year": 2021,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "ETF",
+      "시장미시구조",
+      "기관투자자"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Huang, O’Hara and Zhong, RFS, 2021, Innovation and Informed Trading_ Evidence from Industry ETFs.pdf"
+     },
+     "one_liner": "헤지펀드가 개별주식을 사면서 그 종목이 속한 산업 ETF를 공매도하는 '롱주식/숏ETF' 헤지가 좋은 실적 서프라이즈 직전에 급증하고, 산업 ETF가 상장된 뒤 산업위험 노출이 큰 회원주식의 실적발표 후 표류(PEAD)가 유의하게 줄며(삼중교차항 −0.005, t=−3.59), 그 결과 산업 ETF의 공매도잔고 증가는 개별주식과 정반대로 다음 달 ETF 수익을 양(+)으로 예측한다(4팩터 알파 월 25bp, t=2.59)"
+    },
+    {
+     "id": "jahan-parvar-zikes-2023",
+     "vault": "etf-microstructure",
+     "title": "When Do Low-Frequency Measures Really Measure Effective Spreads? Evidence from Equity and Foreign Exchange Markets",
+     "title_ko": "저빈도 스프레드 측정치는 무엇을 재고 있나 — 음수를 막으려다 변동성을 재게 된 유동성 대용치들",
+     "authors": [
+      "Mohammad R. Jahan-Parvar",
+      "Filip Zikes"
+     ],
+     "year": 2023,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "시장미시구조",
+      "유동성",
+      "실증검증"
+     ],
+     "difficulty": "심화",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Jahan-Parvar and Zikes, RFS, 2023, When Do Low-Frequency Measures Really Measure Effective Spreads.pdf"
+     },
+     "one_liner": "Roll·Hasbrouck과 실무에서 가장 많이 쓰이는 Corwin-Schultz·Abdi-Ranaldo 버전은 '음수 방지'를 위한 절단 때문에 스프레드가 아니라 변동성을 재고 있으며, 2003년 이후 대형주에서는 실제 실효스프레드(월평균 0.06%)의 최대 24.8배까지 부풀어 유동성 프리미엄 같은 기본 결과조차 재현하지 못한다"
+    },
+    {
+     "id": "khomyn-putnins-zoican-2024",
+     "vault": "etf-microstructure",
+     "title": "The Value of ETF Liquidity",
+     "title_ko": "왜 비싼 ETF가 이기는가 — 유동성이라는 네트워크 효과와 10.95bp 수수료 프리미엄",
+     "authors": [
+      "Marta Khomyn",
+      "Tālis Putniņš",
+      "Marius Zoican"
+     ],
+     "year": 2024,
+     "venue": "The Review of Financial Studies",
+     "keywords": [
+      "ETF",
+      "유동성",
+      "시장미시구조"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) RFS, 2024, Khomyn, Putniņš and Zoican, The Value of ETF Liquidity.pdf"
+     },
+     "one_liner": "같은 지수를 추종하는 ETF들 중 더 유동적인 쪽이 오히려 연 10.95bp 비싼 수수료를 받으면서도 시장점유율을 38%p 더 가져간다 — 회전율 높은 투자자는 수수료보다 스프레드를 중시하고, 그들의 거래가 다시 유동성을 키우는 자기강화 고리가 만들어지기 때문이다"
+    }
+   ]
+  },
   {
    "id": "factor-anomalies",
    "title": "Factors & Anomalies",
@@ -200,6 +442,52 @@
       "pdf": "papers/(Equity) Sullivan, Timmermann and White, 1999, JF, Data-Snooping, Technical Trading Rule Performance, and the Bootstrap.pdf"
      },
      "one_liner": "다우지수 100년치에 기술적 매매 규칙 7,846개를 전부 돌려 '최고 규칙'의 성과를 데이터스누핑 보정 p값으로 재검증했더니, 1986년까지는 최고 규칙(5일 이동평균, 연 17.2%)이 보정 후에도 유의했지만 1987–96년 표본외와 S&P500 선물에서는 단독 p값 0.04짜리 규칙조차 보정하면 p값이 0.9로 튀며 증거가 사라졌다"
+    }
+   ]
+  },
+  {
+   "id": "information-attention",
+   "title": "Information & Attention",
+   "title_ko": "정보·투자자 주의",
+   "permission": "summary",
+   "note_count": 1,
+   "keywords": [
+    "마켓타이밍",
+    "미디어 감성",
+    "수익률 예측성",
+    "실증검증",
+    "정보확산",
+    "투자자 주의",
+    "투자자심리"
+   ],
+   "description_ko": "정보와 주의(attention)가 가격에 스며드는 경로 — 미디어 감성, 경제적 연결고리를 따라 흐르는 정보, 기관투자자의 주의 배분.",
+   "source": {
+    "repo": "quantddubi/test1",
+    "path": "vaults/information-attention",
+    "pdf_store": "Google Drive + papers/"
+   },
+   "notes": [
+    {
+     "id": "tetlock-2007",
+     "vault": "information-attention",
+     "title": "Giving Content to Investor Sentiment: The Role of Media in the Stock Market",
+     "title_ko": "신문이 비관적이면 내일 주가가 빠진다 — 그리고 한 주 안에 되돌아온다",
+     "authors": [
+      "Paul C. Tetlock"
+     ],
+     "year": 2007,
+     "venue": "Journal of Finance",
+     "keywords": [
+      "투자자심리",
+      "마켓타이밍",
+      "실증검증"
+     ],
+     "difficulty": "중급",
+     "status": "verified",
+     "source": {
+      "pdf": "papers/(Equity) Tetlock, 2007, JF, Giving Content to Investor Sentiment.pdf"
+     },
+     "one_liner": "월스트리트저널 시황 칼럼의 비관적 단어 비중이 1표준편차 오르면 다우지수가 다음 날 8.1bp 떨어졌다가 그 주 안에 6.8bp를 되돌린다 — 뉴스가 새 정보가 아니라 투자자 심리를 실어 나른다는 첫 대규모 증거"
     }
    ]
   },
@@ -925,6 +1213,84 @@
    "origin": "wikilink"
   },
   {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-kim-2023",
+   "target_vault": "etf-microstructure",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "저쪽은 ETF 차익거래가 '기초주식'의 변동성을 높인다고 보고, 이 논문은 거울상으로 'ETF 자신'의 분산이 NAV보다 커진다고 본다. 보유종목 식별도 저 논문 방식을 따른다"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "box-davis-evans-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 ETF-NAV 괴리를 일중(intraday) 차익거래 실행 관점에서 본 연구 — 이쪽은 일간·연간 빈도의 추적오차"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "evans-moussawi-pagano-2026",
+   "target_vault": "etf-microstructure",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문의 인과 식별에 쓰인 Reg SHO 임계종목·FTD 메커니즘이 Evans et al.의 운영적 공매도 연구에서 직접 왔다"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "hasbrouck-2003",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "논문이 각주에서 인용하는 지수상품 가격발견 연구 — 선물·ETF 간 가격발견 분업 문제"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "jahan-parvar-zikes-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문의 핵심 변수인 TAQ 유효스프레드를 저빈도 대용치가 얼마나 잘 근사하는지 검증한 연구"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 유동성 자체가 가격(수수료·수요)에 반영된다는 논의. 이 논문은 유동성이 추적오차와 기대수익에 반영됨을 보인다"
+  },
+  {
+   "source": "bae-kim-2020",
+   "source_vault": "etf-microstructure",
+   "target": "moreira-muir-2017",
+   "target_vault": "volatility-management",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
    "source": "barroso-santa-clara-2015",
    "source_vault": "momentum",
    "target": "daniel-moskowitz-2016",
@@ -971,6 +1337,125 @@
    "type": "mentions",
    "cross": true,
    "origin": "wikilink"
+  },
+  {
+   "source": "ben-david-franzoni-kim-2023",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "builds-on",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자팀의 직계 선행 연구. ETF 자금흐름이 기초자산 가격을 움직인다는 그쪽 메커니즘을 이 논문이 부록 F.7의 가격압력 반증 분석에 그대로 쓴다"
+  },
+  {
+   "source": "ben-david-franzoni-kim-2023",
+   "source_vault": "etf-microstructure",
+   "target": "hou-xue-zhang-2020",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "ben-david-franzoni-kim-2023",
+   "source_vault": "etf-microstructure",
+   "target": "huang-ohara-zhong-2021",
+   "target_vault": "etf-microstructure",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "산업 ETF를 정보거래·헤지 도구로 보는 시각과 정면 대비. 이 논문은 대차 가능 주식이 없던 ETF 표본(특화 343개)에서도 FFC4 알파가 −0.58%/월이므로 헤지·공매도 수요는 저성과의 주원인이 아니라고 기각한다"
+  },
+  {
+   "source": "ben-david-franzoni-kim-2023",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문 3.1절에서 직접 인용 — 광의형 ETF의 거래량이 만드는 유동성 가치가 저수수료 승자독식 구조의 근거로 쓰인다. ETF 수수료 격차라는 같은 퍼즐의 다른 쪽 설명"
+  },
+  {
+   "source": "ben-david-franzoni-kim-2023",
+   "source_vault": "etf-microstructure",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "알파 감쇠의 사건을 '논문 발표'가 아니라 '상품 출시'로 바꾼 판본. 스마트베타 ETF의 출시 후 알파 0(그림 5 B)은 데이터마이닝 감쇠의 산업판이다"
+  },
+  {
+   "source": "ben-david-franzoni-kim-2023",
+   "source_vault": "etf-microstructure",
+   "target": "tetlock-2007",
+   "target_vault": "information-attention",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "언론 감성이 수익률을 예측한다는 계보. 이 논문은 RavenPack 감성점수를 '투자자 주의(attention)'의 핵심 대리변수로 삼아 출시 시점 고평가를 식별한다"
+  },
+  {
+   "source": "ben-david-franzoni-moussawi-2018",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-kim-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자진의 ETF 산업 후속 연구 — ETF 확산이 만드는 왜곡이라는 문제의식을 공유"
+  },
+  {
+   "source": "ben-david-franzoni-moussawi-2018",
+   "source_vault": "etf-microstructure",
+   "target": "box-davis-evans-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문이 간접 증거(오차·스프레드 상호작용)로만 남긴 일중 ETF-바스켓 차익거래를 직접 측정하는 후속 연구"
+  },
+  {
+   "source": "ben-david-franzoni-moussawi-2018",
+   "source_vault": "etf-microstructure",
+   "target": "evans-moussawi-pagano-2026",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문이 Evans et al.(2017)로 명시 인용 — AP의 창출·환매 활동이 활발할수록 기초종목 스프레드가 넓어진다는 결과로, 같은 차익거래 채널의 비용 측면"
+  },
+  {
+   "source": "ben-david-franzoni-moussawi-2018",
+   "source_vault": "etf-microstructure",
+   "target": "huang-ohara-zhong-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문이 예시로 든 '개별주 공매도 + 섹터ETF 매수' 헤지 거래가 정보거래를 어떻게 옮기는지를 다루는 연구"
+  },
+  {
+   "source": "ben-david-franzoni-moussawi-2018",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문의 대전제(ETF 유동성이 단기 클리엔텔을 끌어들인다)를 ETF 수수료·유동성 균형 관점에서 다룸"
+  },
+  {
+   "source": "ben-david-franzoni-moussawi-2018",
+   "source_vault": "etf-microstructure",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "차익거래 비용(스프레드·대차수수료)이 결과의 크기를 조절한다는 식별 논리가 동일 — 저쪽은 알파 감쇠, 이쪽은 변동성 전이"
   },
   {
    "source": "bollerslev-hood-huss-pedersen-2018",
@@ -1099,6 +1584,66 @@
    "type": "mentions",
    "cross": false,
    "origin": "wikilink"
+  },
+  {
+   "source": "box-davis-evans-2021",
+   "source_vault": "etf-microstructure",
+   "target": "bae-kim-2020",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF와 기초 바스켓 간 유동성 연결을 수익률·분산·추적오차 측면에서 본 연구. 이쪽은 그 연결의 방향성을 일중 인과 구조로 검증"
+  },
+  {
+   "source": "box-davis-evans-2021",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF가 차익거래 경로로 기초종목에 비펀더멘털 충격을 전달한다는 이 논문의 핵심 주장을 분 단위 데이터로 직접 검증해 기각한다 — 본문이 명시적으로 검증 대상으로 인용"
+  },
+  {
+   "source": "box-davis-evans-2021",
+   "source_vault": "etf-microstructure",
+   "target": "evans-moussawi-pagano-2026",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "저자 Evans 공통. 이 논문이 추론한 '시장조성자 재고 헤지 후 설정/환매로 상계' 메커니즘을 운영적 공매도(operational shorting) 데이터로 직접 관측한다"
+  },
+  {
+   "source": "box-davis-evans-2021",
+   "source_vault": "etf-microstructure",
+   "target": "hasbrouck-2003",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "동일한 문제(지수·ETF·선물 간 일중 가격발견의 주도권)를 더 미세한 시간 단위와 다른 계량으로 접근"
+  },
+  {
+   "source": "box-davis-evans-2021",
+   "source_vault": "etf-microstructure",
+   "target": "huang-ohara-zhong-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF를 정보거래의 헤지 수단으로 보는 시각. 이 논문의 '유동성공급자가 ETF로 기초종목 노출을 상계한다'는 해석과 같은 방향"
+  },
+  {
+   "source": "box-davis-evans-2021",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "'ETF가 기초종목보다 유동적'이라는 전제를 다룬다. 이 논문은 미국 국내주식 표본에서 그 전제가 55%의 관측에서 성립하지 않음을 보고"
   },
   {
    "source": "brandt-santa-clara-valkanov-2009",
@@ -1632,6 +2177,75 @@
    "note": "이 논문이 기각하려는 세 번째 용의자(데이터 스누핑)의 통계적 기초를 제공한 고전"
   },
   {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "bae-kim-2020",
+   "target_vault": "etf-microstructure",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF·기초자산 유동성이 추적오차를 키운다는 결과에, 운영적 공매도가 오히려 괴리와 추적오차를 줄인다는 새 결정요인을 추가"
+  },
+  {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-kim-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "창출 후 수익 반전을 ETF 과대평가 가설과 연결해 해석하는 근거로 직접 인용"
+  },
+  {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 보유율이 기초주식 스프레드·변동성을 높인다는 결과는 재확인하되, 운영적 공매도가 그 전달을 차단하는 완충장치임을 보임"
+  },
+  {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "box-davis-evans-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 ETF-기초자산 차익거래 현장을 다루지만, 이쪽은 차익거래를 '실행하는' 경로가 아니라 '지연하는' 경로를 측정"
+  },
+  {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "huang-ohara-zhong-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "산업 ETF에는 정보 기반 거래가 있다는 결과와 대비 — 이 논문은 ETF 공매도 총량의 다수가 비정보적임을 보인다"
+  },
+  {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "jahan-parvar-zikes-2023",
+   "target_vault": "etf-microstructure",
+   "type": "mentions",
+   "cross": false,
+   "origin": "wikilink"
+  },
+  {
+   "source": "evans-moussawi-pagano-2026",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 유동성 자체가 가치를 갖는다는 관점의 공급측 메커니즘 — 그 유동성이 실제로 어떻게 만들어지는지를 설명"
+  },
+  {
    "source": "fama-french-1993",
    "source_vault": "factor-anomalies",
    "target": "asness-frazzini-pedersen-2012",
@@ -1968,6 +2582,66 @@
    "note": "선형 예측의 비관론을 비선형·고차원으로 확장 검증. S&P 500 타이밍 샤프지수 0.51→0.77"
   },
   {
+   "source": "hasbrouck-2003",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF–기초자산 연결통로를 다루지만 방향이 반대 — 이쪽은 정보 기여도, 저쪽은 비정보 수요충격의 전이"
+  },
+  {
+   "source": "hasbrouck-2003",
+   "source_vault": "etf-microstructure",
+   "target": "box-davis-evans-2021",
+   "target_vault": "etf-microstructure",
+   "type": "extends",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF와 기초 포트폴리오의 일중 가격 연동이라는 같은 질문을 20년 뒤 고빈도 차익거래 데이터로 확장"
+  },
+  {
+   "source": "hasbrouck-2003",
+   "source_vault": "etf-microstructure",
+   "target": "evans-moussawi-pagano-2026",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 가격이 기초자산에 붙어 있게 만드는 시장조성·차익거래 배관을 파고든 연구"
+  },
+  {
+   "source": "hasbrouck-2003",
+   "source_vault": "etf-microstructure",
+   "target": "huang-ohara-zhong-2021",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "섹터/산업 ETF에 정보성 거래가 실리는가 — 이 논문은 2000년 시점 섹터 정보지분 10%로 미미하다 보고, 저쪽은 산업 ETF가 헤지 수단으로 정보거래에 편입된다고 본다"
+  },
+  {
+   "source": "hasbrouck-2003",
+   "source_vault": "etf-microstructure",
+   "target": "jahan-parvar-zikes-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "고빈도 가격에서 미시구조 잡음을 걷어내고 잠재 효율가격을 복원한다는 같은 계량 문제의식"
+  },
+  {
+   "source": "hasbrouck-2003",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 지수를 담은 경쟁 상품들 사이에서 유동성이 어떻게 갈리는지를 다루는 후대 연구"
+  },
+  {
    "source": "hou-xue-zhang-2020",
    "source_vault": "factor-anomalies",
    "target": "fama-french-1993",
@@ -1996,6 +2670,126 @@
    "cross": false,
    "origin": "frontmatter",
    "note": "같은 신뢰성 문제의 다른 진단 — 저쪽은 '발표 후 감소', 이쪽은 '애초에 재현 실패'"
+  },
+  {
+   "source": "huang-ohara-zhong-2021",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-kim-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "특화 ETF의 사회적 가치에 대한 반대 방향 증거 — 이 논문은 산업 ETF를 '긍정적 금융혁신'으로 결론짓고, 저쪽은 특화 ETF 보유자의 성과가 나쁘다고 본다"
+  },
+  {
+   "source": "huang-ohara-zhong-2021",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "contradicts",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "저쪽은 ETF 차익거래가 기초주식의 비펀더멘털 변동성을 키운다고 보고, 이 논문은 산업 ETF가 정보거래를 촉진해 효율성을 높인다고 본다. 논문이 서론에서 'ETF가 해롭다'는 문헌의 대표로 직접 인용"
+  },
+  {
+   "source": "huang-ohara-zhong-2021",
+   "source_vault": "etf-microstructure",
+   "target": "engelberg-mclean-pontiff-2018",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "실적발표일에 정보가 가격에 반영되는 속도라는 같은 무대. 저쪽은 이상현상 수익이 발표일에 집중된다고 보고, 이쪽은 헤지 수단이 생기면 그 집중이 발표일 안으로 더 빨리 흡수된다고 본다"
+  },
+  {
+   "source": "huang-ohara-zhong-2021",
+   "source_vault": "etf-microstructure",
+   "target": "evans-moussawi-pagano-2026",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "산업 ETF 공매도잔고의 경쟁 설명인 '운영상 공매도(operational shorting)'. 논문은 각주 21에서 이를 인용해 대안 설명으로 배제한다"
+  },
+  {
+   "source": "huang-ohara-zhong-2021",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 설계·유동성 논의. 이 논문의 결론이 '헤지 편익을 잘 제공하는 ETF를 어떻게 설계할 것인가'로 끝난다는 점에서 같은 문제군"
+  },
+  {
+   "source": "huang-ohara-zhong-2021",
+   "source_vault": "etf-microstructure",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "차익거래 비용이 낮을수록 미스프라이싱이 빨리 사라진다는 논리의 응용 — 산업 ETF는 그 비용(산업위험 헤지 비용)을 직접 낮추는 장치"
+  },
+  {
+   "source": "jahan-parvar-zikes-2023",
+   "source_vault": "etf-microstructure",
+   "target": "bae-kim-2020",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 유동성 프리미엄·추적오차 실증도 스프레드 기반 유동성 대용치에 의존하며, ETF는 SNR이 낮은 대형·고유동성 자산이라 이 논문의 경고가 직접 적용된다"
+  },
+  {
+   "source": "jahan-parvar-zikes-2023",
+   "source_vault": "etf-microstructure",
+   "target": "demiguel-martin-utrera-nogales-2020",
+   "target_vault": "portfolio-construction",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "이 논문 각주 2가 저빈도 측정치를 쓰는 대표 응용으로 명시 인용한 연구 — 특성 결합의 회전율·순수익 계산이 스프레드 대용치 위에 서 있다"
+  },
+  {
+   "source": "jahan-parvar-zikes-2023",
+   "source_vault": "etf-microstructure",
+   "target": "hasbrouck-2003",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "같은 저자 계열의 고빈도 가격발견 접근 — 이 논문이 벤치마크로 삼는 '고빈도 데이터로 직접 측정' 노선의 대표 사례"
+  },
+  {
+   "source": "jahan-parvar-zikes-2023",
+   "source_vault": "etf-microstructure",
+   "target": "khomyn-putnins-zoican-2024",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 2차시장 스프레드 수준이 수수료·경쟁 구조를 결정한다는 실증이므로, 스프레드 측정의 정확도가 그 결론의 전제가 된다"
+  },
+  {
+   "source": "jahan-parvar-zikes-2023",
+   "source_vault": "etf-microstructure",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "차익거래 비용 지수의 5개 구성변수 중 하나가 호가스프레드인데, 그쪽이 쓴 CRSP 호가스프레드는 이 논문이 권장하는 그룹2 측정치다"
+  },
+  {
+   "source": "jahan-parvar-zikes-2023",
+   "source_vault": "etf-microstructure",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "그쪽의 거래비용 추정은 전적으로 Hasbrouck(2009) 깁스 스프레드에 의존하는데, 이 논문은 바로 그 측정치를 변동성 편의 그룹1로 분류한다(MTAQ 월간 상대편의 3.20배)"
   },
   {
    "source": "jegadeesh-titman-1993",
@@ -2189,6 +2983,66 @@
    "cross": true,
    "origin": "frontmatter",
    "note": "같은 15개 예측변수를 쓰면서 R² 비관론은 재확인하되(릿지리스 R² −9,764%), 타이밍 전략 샤프비율로 평가하면 예측이 크게 유익하다고 경제적 결론을 뒤집는다"
+  },
+  {
+   "source": "khomyn-putnins-zoican-2024",
+   "source_vault": "etf-microstructure",
+   "target": "bae-kim-2020",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 유동성이 수익률·분산·추적오차에 미치는 영향 — 이 논문이 '가격표'를 매긴 유동성의 자산가격 측면"
+  },
+  {
+   "source": "khomyn-putnins-zoican-2024",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-kim-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "ETF 경쟁의 나머지 절반 — 저쪽은 틈새 지수로 차별화하는 경쟁, 이쪽은 같은 지수 안에서 유동성으로 하는 경쟁"
+  },
+  {
+   "source": "khomyn-putnins-zoican-2024",
+   "source_vault": "etf-microstructure",
+   "target": "ben-david-franzoni-moussawi-2018",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "각주 6에서 직접 인용. 저쪽은 ETF 유동성이 기초자산으로 전달되는 경로, 이쪽은 그 유동성이 ETF 사이에서 어떻게 배분되는가"
+  },
+  {
+   "source": "khomyn-putnins-zoican-2024",
+   "source_vault": "etf-microstructure",
+   "target": "evans-moussawi-pagano-2026",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "본문이 Evans et al.(2021)로 직접 인용 — ETF 2차시장 유동성 공급의 다른 축(지정판매자의 operational shorting)"
+  },
+  {
+   "source": "khomyn-putnins-zoican-2024",
+   "source_vault": "etf-microstructure",
+   "target": "hasbrouck-2003",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "SPY 같은 최상위 유동성 ETF가 왜 가격발견의 중심이 되는지 — 이 논문의 유동성 집중 현상이 만드는 결과"
+  },
+  {
+   "source": "khomyn-putnins-zoican-2024",
+   "source_vault": "etf-microstructure",
+   "target": "jahan-parvar-zikes-2023",
+   "target_vault": "etf-microstructure",
+   "type": "related",
+   "cross": false,
+   "origin": "frontmatter",
+   "note": "이 논문의 핵심 종속변수인 유효·실현스프레드를 어떻게 신뢰성 있게 측정하는가"
   },
   {
    "source": "kozak-nagel-santosh-2020",
@@ -2554,6 +3408,64 @@
    "note": "표본내 유의성이 표본외에서 무너진다는 같은 경고를 수익률 예측변수 쪽에서 보인 연구"
   },
   {
+   "source": "tetlock-2007",
+   "source_vault": "information-attention",
+   "target": "engelberg-mclean-pontiff-2018",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "뉴스와 수익의 연결을 시장 전체가 아니라 종목·이상현상 단위로 확장 — 이상현상 수익이 뉴스일에 집중된다는 발견"
+  },
+  {
+   "source": "tetlock-2007",
+   "source_vault": "information-attention",
+   "target": "fama-french-1993",
+   "target_vault": "factor-anomalies",
+   "type": "builds-on",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "일간 SMB 팩터를 Fama-French(1993) 방식 그대로 구성해 종속변수로 사용, 소형주에서 심리 효과가 더 크고 오래간다는 것을 검증"
+  },
+  {
+   "source": "tetlock-2007",
+   "source_vault": "information-attention",
+   "target": "mclean-pontiff-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "텍스트 감성 거래가 널리 알려진 뒤 7.3% 전략이 얼마나 남았을지를 판단하는 프레임"
+  },
+  {
+   "source": "tetlock-2007",
+   "source_vault": "information-attention",
+   "target": "novy-marx-velikov-2016",
+   "target_vault": "factor-anomalies",
+   "type": "related",
+   "cross": true,
+   "origin": "frontmatter",
+   "note": "일평균 4.4bp라는 전략 수익이 거래비용 컷오프와 정확히 같은 크기다 — 비용 차감 후 무엇이 남는지를 정면 측정한 문헌"
+  },
+  {
+   "source": "tetlock-2007",
+   "source_vault": "information-attention",
+   "target": "sullivan-timmermann-white-1999",
+   "target_vault": "factor-anomalies",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
+   "source": "tetlock-2007",
+   "source_vault": "information-attention",
+   "target": "welch-goyal-2008",
+   "target_vault": "market-timing",
+   "type": "mentions",
+   "cross": true,
+   "origin": "wikilink"
+  },
+  {
    "source": "welch-goyal-2008",
    "source_vault": "market-timing",
    "target": "barroso-santa-clara-2015",
@@ -2612,6 +3524,126 @@
   }
  ],
  "affinity": [
+  {
+   "a": "etf-microstructure",
+   "b": "factor-anomalies",
+   "shared_keywords": [
+    "실증검증",
+    "투자자심리"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 6,
+    "mentions": 1
+   },
+   "strength": 6.25
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "information-attention",
+   "shared_keywords": [
+    "실증검증",
+    "투자자심리"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 1,
+    "mentions": 0
+   },
+   "strength": 1.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "market-timing",
+   "shared_keywords": [
+    "실증검증"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [
+    "실증검증"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "momentum",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "portfolio-construction",
+   "shared_keywords": [
+    "실증검증"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 1,
+    "mentions": 0
+   },
+   "strength": 1.0
+  },
+  {
+   "a": "etf-microstructure",
+   "b": "volatility-management",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 1
+   },
+   "strength": 0.25
+  },
+  {
+   "a": "factor-anomalies",
+   "b": "information-attention",
+   "shared_keywords": [
+    "마켓타이밍",
+    "실증검증",
+    "투자자심리"
+   ],
+   "edge_counts": {
+    "builds-on": 1,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 3,
+    "mentions": 1
+   },
+   "strength": 4.25
+  },
   {
    "a": "factor-anomalies",
    "b": "market-timing",
@@ -2693,6 +3725,81 @@
     "mentions": 1
    },
    "strength": 1.25
+  },
+  {
+   "a": "information-attention",
+   "b": "market-timing",
+   "shared_keywords": [
+    "마켓타이밍",
+    "실증검증"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 1
+   },
+   "strength": 0.25
+  },
+  {
+   "a": "information-attention",
+   "b": "ml-asset-pricing",
+   "shared_keywords": [
+    "마켓타이밍",
+    "실증검증"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "momentum",
+   "shared_keywords": [],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "portfolio-construction",
+   "shared_keywords": [
+    "실증검증"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
+  },
+  {
+   "a": "information-attention",
+   "b": "volatility-management",
+   "shared_keywords": [
+    "마켓타이밍"
+   ],
+   "edge_counts": {
+    "builds-on": 0,
+    "extends": 0,
+    "contradicts": 0,
+    "related": 0,
+    "mentions": 0
+   },
+   "strength": 0.0
   },
   {
    "a": "market-timing",
