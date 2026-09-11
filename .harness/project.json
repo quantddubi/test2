@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "harness_version": "1.0.0",
+  "repository": "quantddubi/test2",
+  "baseline_commit": "341fda8e7493b6bd54a21f5e8925115b898b2569",
+  "description": "공개 연구 Vault 관계망 대시보드",
+  "instruction_scopes": [
+    {
+      "agents": "AGENTS.md",
+      "claude": "CLAUDE.md",
+      "context": null
+    }
+  ],
+  "read_first": [
+    "README.md"
+  ],
+  "state_documents": [],
+  "commands": {
+    "test": {
+      "argv": [
+        "{python}",
+        "scripts/validate_exchange.py"
+      ],
+      "cwd": ".",
+      "effect": "test",
+      "evidence": [
+        "scripts/validate_exchange.py",
+        ".github/workflows/validate-exchange.yml"
+      ],
+      "verification": "정의와 근거 파일 확인. 이번 하네스 설정에서 애플리케이션 명령은 실행하지 않음."
+    }
+  }
+}
